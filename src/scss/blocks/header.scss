@@ -1,3 +1,69 @@
-.page-header {
+.header {
   color: $text-color;
+}
+
+.header-mobile {
+    display: inline-block;
+
+    @media(min-width: $screen-sm) {
+        display: none;
+    }
+}
+
+// Styles for mobile navigation
+.navigation-mobile {
+    width: 10em;
+    background: $gray;
+    box-sizing: border-box;
+    // padding-left: .5em;
+
+
+    &_list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .group-list {
+        margin-bottom: 1em;
+
+        &_title {
+
+            display: block;
+            color: $text-color;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 1em;
+
+            &:hover {
+                background: #fff;
+            }
+        }
+
+        &_items {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                color: $text-color;
+                text-decoration: none;
+                font-size: 1em;
+                padding: 1em;
+
+                &:hover {
+                    background: #fff;
+                }
+            }
+        }
+    }
+}
+
+// End of styles for mobile
+
+.header-desktop {
+    display: none;
+
+    @media(min-width: $screen-sm) {
+        display: inline-block;
+    }
 }
