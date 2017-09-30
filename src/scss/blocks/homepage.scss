@@ -1,0 +1,95 @@
+.homepage {
+
+
+    &-cell_wide {
+        width: 100%;
+        height: 30em;
+        display: flex;
+        flex-direction: column;
+
+
+
+        @media(min-width: $screen-sm) {
+            height: 26em;
+            flex-direction: row;
+        }
+
+        .homepage-image:first-child,
+        .homepage-image:last-child {
+            width: 100%;
+            height: 15em;
+            background-repeat: no-repeat;
+
+            @media(min-width: $screen-sm) {
+                height: 16em;
+            }
+
+            @media(min-width: $screen-md) {
+                height: 26em;
+            }
+        }
+
+        .homepage-image:first-child {
+            background-image: url('/img/homepage-image-003.jpg');
+            background-size: 100%;
+        }
+
+        .homepage-image:last-child {
+            background-image: url('/img/homepage-image-002.jpg');
+            background-size: 100%;
+        }
+    }
+
+    &-title {
+        text-align: center;
+
+    }
+
+    &-image-row {
+        display: flex;
+        flex-direction: column;
+
+        @media(min-width: $screen-sm) {
+            flex-direction: row;
+        }
+    }
+
+    &-cell_half {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1em;
+    }
+
+    &-bottom {
+        margin-top: 2em;
+        margin-bottom: 2em;
+
+        &-text {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        &-navigation {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-top: 1em;
+
+            @media (min-width: $screen-sm) {
+                flex-direction: row;
+            }
+        }
+
+        &-link {
+            color: #8e8e8e;
+            margin-bottom: 1em;
+
+            @media(min-width: $screen-sm) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+
+}
