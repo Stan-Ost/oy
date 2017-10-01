@@ -30,12 +30,12 @@
         }
 
         .homepage-image:first-child {
-            background-image: url('/img/homepage-image-003.jpg');
+            // background-image: url('/img/homepage-image-003.jpg');
             background-size: 100%;
         }
 
         .homepage-image:last-child {
-            background-image: url('/img/homepage-image-002.jpg');
+            // background-image: url('/img/homepage-image-002.jpg');
             background-size: 100%;
         }
     }
@@ -87,6 +87,10 @@
 
             @media(min-width: $screen-sm) {
                 margin-bottom: 0;
+            }
+
+            &:hover {
+                color: #000;
             }
         }
     }
