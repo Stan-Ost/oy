@@ -163,10 +163,8 @@ a {
     height: 15em;
     background-repeat: no-repeat; }
   .homepage-cell_wide .homepage-image:first-child {
-    background-image: url("/img/homepage-image-003.jpg");
     background-size: 100%; }
   .homepage-cell_wide .homepage-image:last-child {
-    background-image: url("/img/homepage-image-002.jpg");
     background-size: 100%; }
 
 .homepage-title {
@@ -201,6 +199,8 @@ a {
   .homepage-bottom-link {
     color: #8e8e8e;
     margin-bottom: 1em; }
+    .homepage-bottom-link:hover {
+      color: #000; }
 
 .footer {
   background: #f7f7f7;
@@ -222,6 +222,8 @@ a {
       margin-bottom: 1.2em; }
       .footer-navigation-item a {
         color: #8e8e8e; }
+        .footer-navigation-item a:hover {
+          color: #000; }
   .footer-links {
     display: -ms-flexbox;
     display: flex;
