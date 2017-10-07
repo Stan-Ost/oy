@@ -6,7 +6,8 @@ body {
 
 img {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  object-fit: cover; }
 
 a {
   text-decoration: none;
@@ -56,6 +57,8 @@ a {
 .logo {
   display: inline-block;
   width: 80%; }
+  .logo img {
+    object-fit: contain; }
 
 .navigation-mobile {
   width: 16em;
@@ -150,6 +153,10 @@ a {
         border-bottom: 1px solid #000;
         color: #000; }
 
+.homepage-image {
+  width: 100%;
+  height: 425px; }
+
 .homepage-cell_wide {
   width: 100%;
   height: 30em;
@@ -168,7 +175,9 @@ a {
     background-size: 100%; }
 
 .homepage-title {
-  text-align: center; }
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 3em; }
 
 .homepage-image-row {
   display: -ms-flexbox;
@@ -178,12 +187,36 @@ a {
 
 .homepage-cell_half {
   width: 100%;
-  box-sizing: border-box;
-  padding: 1em; }
+  position: relative; }
+  .homepage-cell_half:first-child {
+    margin-right: 2em; }
+
+.homepage .image_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff; }
+  .homepage .image_overlay h2 {
+    margin-top: 35%;
+    text-transform: uppercase; }
+  .homepage .image_overlay a {
+    color: #fff; }
+    .homepage .image_overlay a:hover {
+      color: #ccc; }
 
 .homepage-bottom {
-  margin-top: 2em;
-  margin-bottom: 2em; }
+  margin-top: 5em;
+  margin-bottom: 3em; }
   .homepage-bottom-text {
     text-transform: uppercase;
     font-weight: bold; }
@@ -238,7 +271,87 @@ a {
       position: relative; }
   .footer-social {
     margin-top: 2em; }
-  @media (min-width: 768px) {
+
+.shoppage .filter {
+  display: none;
+  width: 100%;
+  background: #f3f3f3;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: #000; }
+  .shoppage .filter-bar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .shoppage .filter-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .shoppage .filter-list-item {
+      position: relative;
+      padding-right: 2em;
+      cursor: pointer; }
+      .shoppage .filter-list-item:after {
+        content: '';
+        display: inline-block;
+        width: .5em;
+        height: .5em;
+        border-bottom: 1px solid #000;
+        border-left: 1px solid #000;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -6px;
+        transform: rotate(-45deg); }
+
+.shoppage .catalog {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  border-bottom: 2px solid #bcbcbc; }
+  .shoppage .catalog-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .shoppage .catalog-item:last-child {
+    margin-right: 0; }
+  .shoppage .catalog-item-image {
+    height: 20em; }
+  .shoppage .catalog-item-title {
+    font-size: 1.2em; }
+  .shoppage .catalog-item-text {
+    font-size: 1em;
+    display: block; }
+  .shoppage .catalog-item-price {
+    display: block; }
+
+.shoppage .collection {
+  padding-top: 4em;
+  padding-bottom: 4em; }
+  .shoppage .collection-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+
+.blogpage {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+  .blogpage-item {
+    width: 100%;
+    height: 20em;
+    display: inline-block; }
+    .blogpage-item-link:hover {
+      opacity: 0.1;
+      transition: all .4s;
+      cursor: pointer; }
+    @media (min-width: 768px) {
 
   .header-mobile {
     display: none; }
@@ -285,8 +398,27 @@ a {
     width: 80%; }
 
   .footer-social {
-    margin-top: 0; } }
-  @media (min-width: 992px) {
+    margin-top: 0; }
+
+  .shoppage .filter-list-item {
+    margin-right: 3em; }
+
+  .shoppage .catalog-list {
+    -ms-flex-direction: row;
+    flex-direction: row; }
+
+  .shoppage .catalog-item {
+    margin-right: 2em; }
+
+  .shoppage .collection-list {
+    -ms-flex-direction: row;
+    flex-direction: row; }
+
+  .blogpage-item {
+    width: 33%;
+    height: 30em;
+    display: inline-block; } }
+    @media (min-width: 992px) {
 
   .homepage-cell_wide .homepage-image:first-child,
       .homepage-cell_wide .homepage-image:last-child {
