@@ -47,6 +47,10 @@
     display: inline-block;
     width: 80%;
 
+    img {
+        object-fit: contain;
+    }
+
     @media(min-width: $screen-sm) {
         width: 25em;
     }

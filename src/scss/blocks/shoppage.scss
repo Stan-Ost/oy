@@ -2,6 +2,7 @@
 
 
     .filter {
+        display: none;
         width: 100%;
         background: #f3f3f3;
         padding-top: 2em;
@@ -13,10 +14,38 @@
         }
 
         &-bar {
-            width: 40%;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+        }
+
+        &-list {
+            display: flex;
+            justify-content: space-between;
+
+            &-item {
+                position: relative;
+                padding-right: 2em;
+                cursor: pointer;
+
+                @media (min-width: $screen-sm){
+                    margin-right: 3em;
+                }
+
+                &:after {
+                    content: '';
+                    display: inline-block;
+                    width: .5em;
+                    height: .5em;
+                    border-bottom: 1px solid #000;
+                    border-left: 1px solid #000;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    margin-top: -6px;
+                    transform: rotate(-45deg);
+                }
+            }
         }
 
     }
@@ -29,12 +58,20 @@
 
         &-list {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+
+            @media(min-width: $screen-sm){
+
+                flex-direction: row;
+            }
 
         }
 
         &-item {
-            margin-right: 2em;
+
+            @media(min-width: $screen-sm){
+                margin-right: 2em;
+            }
 
             &:last-child {
                 margin-right: 0;
@@ -65,7 +102,11 @@
 
         &-list {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+
+            @media(min-width: $screen-sm){
+                flex-direction: row;
+            }
         }
     }
 }
