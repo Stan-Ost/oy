@@ -397,7 +397,28 @@ a {
       opacity: 0.1;
       transition: all .4s;
       cursor: pointer; }
-    @media (min-width: 768px) {
+
+.productpage .inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
+.productpage-images {
+  width: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+  .productpage-images-item {
+    width: 50%;
+    height: 20em;
+    display: inline-block; }
+
+.productpage-info {
+  width: 50%; }
+
+@media (min-width: 768px) {
 
   .header-mobile {
     display: none; }
@@ -465,9 +486,9 @@ a {
 
   .blogpage-item {
     width: 33%;
-    height: 30em;
-    display: inline-block; } }
-    @media (min-width: 992px) {
+    height: 30em; } }
+
+@media (min-width: 992px) {
 
   .homepage-cell_wide .homepage-image:first-child,
       .homepage-cell_wide .homepage-image:last-child {
