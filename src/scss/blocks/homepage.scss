@@ -63,6 +63,11 @@
 
         &:first-child {
             margin-right: 2em;
+            margin-bottom: 1em;
+
+            @media(min-width: $screen-sm) {
+                margin-bottom: inherit;
+            }
         }
     }
 
