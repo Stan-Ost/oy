@@ -1,7 +1,7 @@
 body {
   min-width: 320px;
   margin: 0;
-  font-family: "Open Sans_my", sans-serif;
+  font-family: "Gotham Medium", sans-serif;
   color: #434343; }
 
 img {
@@ -12,6 +12,8 @@ img {
 a {
   text-decoration: none;
   color: #000; }
+  a:hover {
+    transition: all .375s; }
 
 .inner {
   max-width: 1170px;
@@ -33,6 +35,10 @@ a {
   font-weight: 700; }
 
 @font-face {
+  font-family: 'Gotham Medium';
+  src: url("../fonts/gotham-medium.woff)") format("woff"), url("../fonts/gotham-medium.woff2") format("woff2"); }
+
+@font-face {
   font-family: 'Avenir Next Heavy';
   src: url("../fonts/AvenirNext-Heavy.woff") format("woff"), url("../fonts/AvenirNext-Heavy.woff2") format("woff2"); }
 
@@ -40,6 +46,10 @@ a {
   font-family: 'Avenir Next bold';
   src: url("../fonts/avenir-next-bold.woff") format("woff"), url("../fonts/avenir-next-bold.woff2") format("woff2");
   font-weight: 700; }
+
+@font-face {
+  font-family: 'Avenir Next Ultra Light';
+  src: url("../fonts/avenir-next-ultralight.woff") format("woff"), url("../fonts/avenir-next-ultralight.woff2") format("woff2"); }
 
 .header {
   position: relative;
@@ -76,6 +86,8 @@ a {
 .logo {
   display: inline-block;
   width: 80%; }
+  .logo a {
+    opacity: 1; }
   .logo img {
     object-fit: contain; }
 
@@ -200,6 +212,10 @@ a {
   text-align: center;
   margin-top: 3em;
   margin-bottom: 3em; }
+  .homepage-title h1 {
+    font-family: "Avenir Next Ultra Light", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .3em; }
 
 .homepage-image-row {
   display: -ms-flexbox;
@@ -231,7 +247,9 @@ a {
   color: #fff; }
   .homepage .image_overlay h2 {
     margin-top: 35%;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: "Avenir Next Heavy", sans-serif;
+    letter-spacing: .3em; }
   .homepage .image_overlay a {
     color: #fff; }
     .homepage .image_overlay a:hover {
