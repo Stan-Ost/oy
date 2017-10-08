@@ -22,6 +22,26 @@ a {
 .svg-icon:hover {
   fill: red; }
 
+@font-face {
+  font-family: 'Gotham Light';
+  src: url("../fonts/gotham-light.woff") format("woff"), url("../fonts/gotham-light.woff2") format("woff2");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url("../fonts/gotham-bold.woff)") format("woff"), url("../fonts/gotham-bold.woff2") format("woff2");
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'Avenir Next light';
+  src: url("../fonts/avenir-next-light.woff") format("woff"), url("../fonts/avenir-next-light.woff2") format("woff2");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Avenir Next bold';
+  src: url("../fonts/avenir-next-bold.woff") format("woff"), url("../fonts/avenir-next-bold.woff2") format("woff2");
+  font-weight: 700; }
+
 .header {
   position: relative;
   z-index: 0;
@@ -189,7 +209,8 @@ a {
   width: 100%;
   position: relative; }
   .homepage-cell_half:first-child {
-    margin-right: 2em; }
+    margin-right: 2em;
+    margin-bottom: 1em; }
 
 .homepage .image_overlay {
   position: absolute;
@@ -378,6 +399,9 @@ a {
   .homepage-image-row {
     -ms-flex-direction: row;
     flex-direction: row; }
+
+  .homepage-cell_half:first-child {
+    margin-bottom: inherit; }
 
   .homepage-bottom-navigation {
     -ms-flex-direction: row;
