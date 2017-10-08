@@ -47,6 +47,10 @@
     display: inline-block;
     width: 80%;
 
+    a {
+        opacity: 1;
+    }
+
     img {
         object-fit: contain;
     }

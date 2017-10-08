@@ -46,6 +46,14 @@
         text-align: center;
         margin-top: 3em;
         margin-bottom: 3em;
+
+
+        h1 {
+            font-family: $avenir_next_ultra_light;
+            text-transform: uppercase;
+            letter-spacing: .3em;
+            // font-size: 2em;
+        }
     }
 
     &-image-row {
@@ -88,6 +96,8 @@
     h2 {
         margin-top: 35%;
         text-transform: uppercase;
+        font-family: $avenir_next_heavy;
+        letter-spacing: .3em;
     }
 
     a {

@@ -13,10 +13,15 @@
 }
 
 @font-face {
+  font-family: 'Gotham Medium';
+  src: url('../fonts/gotham-medium.woff)') format('woff'),
+       url('../fonts/gotham-medium.woff2') format('woff2');
+}
+
+@font-face {
   font-family: 'Avenir Next Heavy';
   src: url('../fonts/AvenirNext-Heavy.woff') format('woff'),
        url('../fonts/AvenirNext-Heavy.woff2') format('woff2');
-
 }
 
 @font-face {
@@ -24,4 +29,10 @@
   src: url('../fonts/avenir-next-bold.woff') format('woff'),
        url('../fonts/avenir-next-bold.woff2') format('woff2');
   font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Avenir Next Ultra Light';
+  src: url('../fonts/avenir-next-ultralight.woff') format('woff'),
+       url('../fonts/avenir-next-ultralight.woff2') format('woff2');
 }

@@ -12,8 +12,12 @@ img {
 }
 
 a {
-  text-decoration: none;
-  color: #000;
+    text-decoration: none;
+    color: #000;
+
+    &:hover {
+        transition: all .375s;
+    }
 }
 
 .inner {
