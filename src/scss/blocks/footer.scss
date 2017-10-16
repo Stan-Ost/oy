@@ -1,9 +1,10 @@
 .footer {
     background: #f7f7f7;
     padding-bottom: 4em;
+    font-size: .7em;
 
     &-navigation {
-        width: 60%;
+        width: 55%;
         padding-top: 2em;
         padding-bottom: 2em;
         display: flex;
@@ -20,8 +21,7 @@
         }
 
         &-item {
-            margin-bottom: 1.2em;
-
+            margin-bottom: 1.1em;
 
             a {
                 color: #8e8e8e;
@@ -53,18 +53,6 @@
         a {
             margin-right: 5em;
             position: relative;
-
-            // &:after {
-            //     content: '';
-            //     display: inline-block;
-            //     position: absolute;
-            //     width: 10px;
-            //     height: 10px;
-            //     border-bottom: 1px solid #000;
-            //     border-right: 1px solid #000;
-            //     right: -2em;
-            //     transform: rotate(45deg);
-            // }
         }
     }
 

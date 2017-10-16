@@ -1,8 +1,8 @@
 body {
-  min-width: 320px;
-  margin: 0;
-  font-family: $font-family;
-  color: $text-color;
+    min-width: 320px;
+    margin: 0;
+    font-family: $font-family;
+    color: $text-color;
 }
 
 img {
@@ -14,9 +14,11 @@ img {
 a {
     text-decoration: none;
     color: #000;
+    transition: all .375s;
 
     &:hover {
-        transition: all .375s;
+        transition: all 0s;
+        color: red;
     }
 }
 
@@ -28,8 +30,13 @@ a {
 }
 
 .svg-icon {
+    width: 1em;
+    height: 1em;
+    fill: #7b7b7b;
+    transition: all .375s;
 
     &:hover {
-        fill: red;
+        fill: #434343;
+        transition: all 0s;
     }
 }
