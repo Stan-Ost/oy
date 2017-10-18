@@ -8,24 +8,23 @@
 </head>
 <body>
     <header class="header">
+        <div class="inner">
         <div class="header-mobile">
-            <div class="header-button">
-                <a href="/">
-                    <svg  class="svg-icon" width="24" height="24"><use xlink:href="#svg-search"></use></svg>
-                </a>
-            </div>
+
+            <a href="/">
+                <svg  class="svg-icon" width="20" height="20"><use xlink:href="#svg-search"></use></svg>
+            </a>
 
             <div class="logo">
                 <a href="/" target="_blank">
-                    <img src="img/logo.png" alt="OlyaYunakova.com" />
+                    <img src="img/logo-2.png" alt="OlyaYunakova.com" />
                 </a>
             </div>
 
-            <div class="header-button">
-                <a href="/">
-                    <svg  class="svg-icon" width="24" height="24"><use xlink:href="#svg-bag"></use></svg>
-                </a>
-            </div>
+            <a href="/">
+                <svg  class="svg-icon" width="20" height="20"><use xlink:href="#svg-bag"></use></svg>
+            </a>
+
         </div>
         <!-- Header mobile -->
 
@@ -65,48 +64,51 @@
         <!-- End of Navigation mobile -->
 
         <div class="header-desktop">
-            <div class="inner">
 
 
-              <div class="header-top">
-                  <div class="header-shipping">
-                      <a href="/">Shipping in: United States ($)</a>
-                  </div>
-                  <div class="logo">
-                      <a href="/">
-                          <img src="img/logo-2.png" alt="">
-                      </a>
-                  </div>
-                  <div class="header-buttons">
-                      <a href="/">
-                          <svg  class="svg-icon svg-search" width="24" height="24"><use xlink:href="#svg-search"></use></svg>
-                      </a>
-                      <a href="/">
-                        <svg  class="svg-icon svg-bag" width="24" height="24"><use xlink:href="#svg-bag"></use></svg>
-                      </a>
-                  </div>
-              </div>
+                <div class="header__top">
+                    <div class="header__top-shipping">
+                        <button class="header__top-button">Shipping in: United States ($)</button>
+                    </div>
+                    <div class="logo">
+                        <a href="/">
+                            <img src="img/logo-2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header__top-buttons">
+                        <button class="header__top-button">
+                            <span>Search</span>
+                            <svg  class="svg-icon svg-search"><use xlink:href="#svg-search"></use></svg>
+                        </button>
+                        <button class="header__top-button">
+                            <span>0</span>
+                            <svg  class="svg-icon svg-bag"><use xlink:href="#svg-bag"></use></svg>
+                        </button>
+                    </div>
+                </div>
 
-              <div class="header-navigation">
-                  <nav class="navigation-bar">
-                      <a href="/">Shop</a>
-                      <a href="/">Blog</a>
-                  </nav>
-                  <div class="navigation-bar-secondary">
-                      <a href="/">Bikini tops</a>
-                      <a href="/">Bikini bottom</a>
-                      <a href="/">Maillot</a>
-                      <a class="_sale" href="/">Sale</a>
-                  </div>
-              </div>
+                <div class="header-navigation">
+                    <nav class="navigation-bar">
+                        <a href="/">Shop</a>
+                        <a href="/">Blog</a>
+                    </nav>
+                    <div class="navigation-bar-secondary">
+                        <a href="/">Bikini tops</a>
+                        <a href="/">Bikini bottom</a>
+                        <a href="/">Maillot</a>
+                        <a class="_sale" href="/">Sale</a>
+                    </div>
+                </div>
 
             </div>
+
+
         </div>
     </header>
+
 <!-- End of header -->
     <main class="homepage">
         <div class="inner">
-
 
             <div class="homepage-cell_wide">
                 <div class="homepage-image">
@@ -118,17 +120,18 @@
             </div>
 
             <div class="homepage-title">
-                <h1>Introducing the Miami Maillot</h1>
+                <p>Introducing the Miami Maillot</p>
                 <a href="/">Shop now</a>
             </div>
 
             <div class="homepage-image-row">
+
                 <div class="homepage-cell_half">
                     <div class="homepage-image">
                         <img src="img/homepage-image-004.jpg" alt="">
                     </div>
                     <div class="image_overlay">
-                        <h2>The little black bikini</h2>
+                        <p>The little black bikini</p>
                         <a href="/">Shop bikini</a>
                     </div>
                 </div>
@@ -137,7 +140,7 @@
                         <img src="img/homepage-image-001.jpg" alt="">
                     </div>
                     <div class="image_overlay">
-                        <h2>The cocktail maillot</h2>
+                        <p>The cocktail maillot</p>
                         <a href="/">Shop maillot</a>
                     </div>
 
@@ -145,7 +148,7 @@
             </div>
 
             <div class="homepage-bottom">
-                <a class="homepage-bottom-text" href="/">explore the collections</a>
+                <p class="homepage-bottom-text" href="/">Explore the collections</p>
                 <div href="/" class="homepage-bottom-navigation">
                     <a href="/" class="homepage-bottom-link">New Arrivals</a>
                     <a href="/" class="homepage-bottom-link">Maillots</a>
@@ -154,8 +157,7 @@
                 </div>
             </div>
 
-
-        </div>
+      </div>
     </main>
 <!-- End of main -->
     <footer class="footer">
@@ -193,12 +195,12 @@
 
             <div class="footer-links">
                 <div class="footer-settings">
-                    <a href="/">
-                        <b>Change country:</b> United States ($)
-                    </a>
-                    <a href="/">
-                        <b>Change language:</b> English
-                    </a>
+                    <button class="footer-settings_button" href="/">
+                        <b>Change country:</b> <span>United States ($)</span>
+                    </button>
+                    <button class="footer-settings_button" href="/">
+                        <b>Change language:</b> <span>English</span>
+                    </button>
                 </div>
                 <div class="footer-social">
                     <a href="/">
