@@ -13,17 +13,17 @@ img {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: $text-color;
     transition: all .375s;
 
     &:hover {
         transition: all 0s;
-        color: red;
+        color: $text-hover-color;
     }
 }
 
 .inner {
-    max-width: 1170px;
+    max-width: 1500px;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0 .5em;
@@ -32,11 +32,12 @@ a {
 .svg-icon {
     width: 1em;
     height: 1em;
-    fill: #7b7b7b;
+    font-size: 1.2em;
+    fill: $text-color;
     transition: all .375s;
 
     &:hover {
-        fill: #434343;
+        fill: $text-hover-color;
         transition: all 0s;
     }
 }

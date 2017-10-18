@@ -2,7 +2,6 @@
 
 
     .filter {
-        display: none;
         width: 100%;
         background: #f3f3f3;
         padding-top: 2em;
@@ -15,8 +14,12 @@
 
         &-bar {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: space-between;
+
+            @media(min-width: $screen-sm) {
+                flex-direction: row;
+            }
         }
 
         &-list {

@@ -18,16 +18,20 @@
         &-list {
             list-style: none;
             padding-left: 0;
+
+            h3 {
+                text-transform: uppercase;
+            }
         }
 
         &-item {
             margin-bottom: 1.1em;
 
             a {
-                color: #8e8e8e;
+                color: $text-color;
 
                 &:hover {
-                    color: #000;
+                    color: $text-hover-color;
                 }
             }
         }
@@ -50,10 +54,45 @@
             width: 80%;
         }
 
-        a {
-            margin-right: 5em;
+        &_button {
+            outline: none;
+            border: none;
+            padding: none;
+            background: transparent;
             position: relative;
+            margin-right: 2em;
+
+            &:hover:after {
+                border-color: $text-hover-color;
+            }
+
+            &:after {
+                content: '';
+                display: inline-block;
+                width: .6em;
+                height: .6em;
+                border-bottom: 1px solid #000;
+                border-right: 1px solid #000;
+                transform: rotate(45deg);
+                position: absolute;
+                right: -1em;
+                top: 0;
+            }
+
+            span {
+                color: $text-color;
+            }
+
+            &:hover {
+                color: $text-hover-color;
+
+                span {
+                    color: $text-hover-color;
+                }
+            }
         }
+
+
     }
 
     &-social {
@@ -64,6 +103,10 @@
 
         @media(min-width: $screen-sm) {
             margin-top: 0;
+        }
+
+        .svg-icon {
+            font-size: 2em;
         }
     }
 }

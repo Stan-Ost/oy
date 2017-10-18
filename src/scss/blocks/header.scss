@@ -120,7 +120,7 @@
             width: 25%;
 
             button:hover:after {
-                border-color: red;
+                border-color: $text-hover-color;
                 transition: all 0s;
             }
 
@@ -130,8 +130,8 @@
                 width: .6em;
                 height: .6em;
                 position: absolute;
-                border-bottom: 1px solid #000;
-                border-right: 1px solid #000;
+                border-bottom: 1px solid $text-color;
+                border-right: 1px solid $text-color;
                 top: 0;
                 right: -1em;
                 transform: rotate(45deg);
@@ -156,13 +156,15 @@
             transition: all .375s;
             margin-right: .5em;
             position: relative;
+            font-size: 1em;
+            color: $text-color;
 
             &:hover {
-                color: red;
+                color: $text-hover-color;
                 transition: all 0s;
 
                 .svg-icon {
-                    fill: red;
+                    fill: $text-hover-color;
                 }
             }
 
@@ -185,12 +187,12 @@
                 text-decoration: none;
                 box-sizing: border-box;
                 padding: 1em 1em;
-                color: #7b7b7b;
+                color: $text-color;
                 border-bottom: 2px solid transparent;
 
                 &:hover {
-                    border-bottom: 2px solid #000;
-                    color: #000;
+                    border-bottom: 2px solid $text-hover-color;
+                    color: $text-hover-color;
                 }
             }
         }
@@ -206,13 +208,13 @@
                 text-decoration: none;
                 box-sizing: border-box;
                 padding: 1.8em 1em;
-                color: #7b7b7b;
+                color: $text-color;
                 border-bottom: 1px solid transparent;
                 margin-right: .2em;
 
                 &:hover {
-                    border-bottom: 1px solid #000;
-                    color: #000;
+                    border-bottom: 1px solid $text-hover-color;
+                    color: $text-hover-color;
                 }
             }
 
