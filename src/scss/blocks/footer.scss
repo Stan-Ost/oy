@@ -1,6 +1,7 @@
 .footer {
     background: #f7f7f7;
-    padding-bottom: 4em;
+    padding-bottom: 6em;
+    padding-bottom: 6em;
     font-size: .7em;
 
     &-navigation {
@@ -21,6 +22,7 @@
 
             h3 {
                 text-transform: uppercase;
+                color: $text-hover-color;
             }
         }
 
@@ -29,6 +31,7 @@
 
             a {
                 color: $text-color;
+                font-size: $elementSize;
 
                 &:hover {
                     color: $text-hover-color;
@@ -57,10 +60,12 @@
         &_button {
             outline: none;
             border: none;
-            padding: none;
+            padding: 0;
+            padding-right: 1em;
             background: transparent;
             position: relative;
-            margin-right: 2em;
+            margin-right: 4em;
+
 
             &:hover:after {
                 border-color: $text-hover-color;
@@ -77,6 +82,11 @@
                 position: absolute;
                 right: -1em;
                 top: 0;
+            }
+
+            b {
+                text-transform: uppercase;
+                color: $text-hover-color;
             }
 
             span {
@@ -107,6 +117,11 @@
 
         .svg-icon {
             font-size: 2em;
+            fill: $text-hover-color;
+
+            &:hover {
+                fill: $text-color;
+            }
         }
     }
 }

@@ -14,16 +14,23 @@ img {
 a {
     text-decoration: none;
     color: $text-color;
-    transition: all .375s;
+    transition: $transition;
 
     &:hover {
-        transition: all 0s;
         color: $text-hover-color;
+        transition: $transition_hover;
     }
 }
 
 .inner {
-    max-width: 1500px;
+    max-width: 1180px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 .5em;
+}
+
+.wide_inner {
+    max-width: 1600px;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0 .5em;
@@ -41,3 +48,4 @@ a {
         transition: all 0s;
     }
 }
+

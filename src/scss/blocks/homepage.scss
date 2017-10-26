@@ -44,6 +44,7 @@
         text-align: center;
         margin-top: 2em;
         margin-bottom: 2em;
+        font-weight: bold;
 
         p {
             font-family: $avenir_next_ultra_light;
@@ -52,7 +53,12 @@
         }
 
         a {
-            font-size: .8em;
+            font-size: $elementSize;
+            color: $text-hover-color;
+
+            &:hover {
+                color: $text-color;
+            }
         }
     }
 
@@ -95,7 +101,7 @@
 
         p {
             font-size: 1.2em;
-            margin-top: 35%;
+            margin-top: 190px;
             text-transform: uppercase;
             font-family: $avenir_next_heavy;
             letter-spacing: .3em;
@@ -103,7 +109,7 @@
 
         a {
             color: #fff;
-            font-size: .6em;
+            font-size: $elementSize;
 
             &:hover {
                 color: $text-hover-color;
@@ -116,11 +122,14 @@
         width: 70%;
         margin-top: 5em;
         margin-bottom: 3em;
-        font-size: .8em;
+        font-size: $elementSize;
 
-        &-text {
+        &-title {
             text-transform: uppercase;
             font-weight: bold;
+            color: $text-hover-color;
+            margin-bottom: 2em;
+
         }
 
         &-navigation {
@@ -138,6 +147,7 @@
         &-link {
             color: $text-color;
             margin-bottom: 1em;
+            font-size: $elementSize;
 
             @media(min-width: $screen-sm) {
                 margin-bottom: 0;

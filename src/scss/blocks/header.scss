@@ -4,7 +4,6 @@
     min-height: 5em;
 }
 
-
 .header-mobile {
     width: 100%;
     display: flex;
@@ -112,9 +111,9 @@
         display: flex;
         justify-content: space-between;
         box-sizing: border-box;
-        padding-top: 1em;
+        padding-top: 1.5em;
         padding-bottom: 2.5em;
-        font-size: .8em;
+        font-size: $elementSize;
 
         &-shipping {
             width: 25%;
@@ -140,7 +139,7 @@
         }
 
         .logo {
-            width: 25%;
+            width: 20%;
         }
 
         &-buttons {
@@ -156,8 +155,8 @@
             transition: all .375s;
             margin-right: .5em;
             position: relative;
-            font-size: 1em;
             color: $text-color;
+            font-size: $elementSize;
 
             &:hover {
                 color: $text-hover-color;
@@ -165,6 +164,7 @@
 
                 .svg-icon {
                     fill: $text-hover-color;
+                    stroke-width: 2;
                 }
             }
 
@@ -202,7 +202,7 @@
             justify-content: center;
             background: #f7f7f7;
             box-sizing: content-box;
-            font-size: .7em;
+            font-size: $elementSize;
 
             a {
                 text-decoration: none;
