@@ -30,9 +30,23 @@
                 position: relative;
                 padding-right: 2em;
                 cursor: pointer;
+                font-size: $elementSize;
+                color: $text-color;
+                transition: $transition;
 
                 @media (min-width: $screen-sm){
                     margin-right: 3em;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+
+
+                &:hover {
+                    color: $text-hover-color;
+                    transition: $transition_hover;
                 }
 
                 &:after {
@@ -86,15 +100,19 @@
 
             &-title {
                 font-size: 1.2em;
+                color: $text-hover-color;
+                font-size: $elementSize;
             }
 
             &-text {
                 font-size: 1em;
                 display: block;
+                font-size: $elementSize;
             }
 
             &-price {
                 display: block;
+                font-size: $elementSize;
             }
         }
     }
