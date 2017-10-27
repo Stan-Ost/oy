@@ -799,7 +799,13 @@ th {
     .shoppage .filter-list-item {
       position: relative;
       padding-right: 2em;
-      cursor: pointer; }
+      cursor: pointer;
+      font-size: 11.4px;
+      color: #7b7b7b;
+      transition: all 0.375s; }
+      .shoppage .filter-list-item:hover {
+        color: #434343;
+        transition: all 0s; }
       .shoppage .filter-list-item:after {
         content: '';
         display: inline-block;
@@ -827,12 +833,16 @@ th {
   .shoppage .catalog-item-image {
     height: 20em; }
   .shoppage .catalog-item-title {
-    font-size: 1.2em; }
+    font-size: 1.2em;
+    color: #434343;
+    font-size: 11.4px; }
   .shoppage .catalog-item-text {
     font-size: 1em;
-    display: block; }
+    display: block;
+    font-size: 11.4px; }
   .shoppage .catalog-item-price {
-    display: block; }
+    display: block;
+    font-size: 11.4px; }
 
 .shoppage .collection {
   padding-top: 4em;
@@ -937,6 +947,9 @@ th {
 
   .shoppage .filter-list-item {
     margin-right: 3em; }
+
+  .shoppage .filter-list-item:last-child {
+    margin-right: 0; }
 
   .shoppage .catalog-list {
     -ms-flex-direction: row;
