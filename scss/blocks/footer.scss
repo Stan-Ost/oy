@@ -1,0 +1,127 @@
+.footer {
+    background: #f7f7f7;
+    padding-bottom: 6em;
+    padding-bottom: 6em;
+    font-size: .7em;
+
+    &-navigation {
+        width: 55%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media(min-width: $screen-sm) {
+            flex-direction: row;
+        }
+
+        &-list {
+            list-style: none;
+            padding-left: 0;
+
+            h3 {
+                text-transform: uppercase;
+                color: $text-hover-color;
+            }
+        }
+
+        &-item {
+            margin-bottom: 1.1em;
+
+            a {
+                color: $text-color;
+                font-size: $elementSize;
+
+                &:hover {
+                    color: $text-hover-color;
+                }
+            }
+        }
+    }
+
+    &-links {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @media(min-width: $screen-sm) {
+            flex-direction: row;
+        }
+    }
+
+    &-settings {
+        width: 100%;
+
+        @media(min-width: $screen-sm) {
+            width: 80%;
+        }
+
+        &_button {
+            outline: none;
+            border: none;
+            padding: 0;
+            padding-right: 1em;
+            background: transparent;
+            position: relative;
+            margin-right: 4em;
+
+
+            &:hover:after {
+                border-color: $text-hover-color;
+            }
+
+            &:after {
+                content: '';
+                display: inline-block;
+                width: .6em;
+                height: .6em;
+                border-bottom: 1px solid #000;
+                border-right: 1px solid #000;
+                transform: rotate(45deg);
+                position: absolute;
+                right: -1em;
+                top: 0;
+            }
+
+            b {
+                text-transform: uppercase;
+                color: $text-hover-color;
+            }
+
+            span {
+                color: $text-color;
+            }
+
+            &:hover {
+                color: $text-hover-color;
+
+                span {
+                    color: $text-hover-color;
+                }
+            }
+        }
+
+
+    }
+
+    &-social {
+        width: 10em;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+
+        @media(min-width: $screen-sm) {
+            margin-top: 0;
+        }
+
+        .svg-icon {
+            font-size: 2em;
+            fill: $text-hover-color;
+
+            &:hover {
+                fill: $text-color;
+            }
+        }
+    }
+}

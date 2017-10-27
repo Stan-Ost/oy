@@ -1,0 +1,23 @@
+.productpage {
+
+    .inner {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &-images {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+
+        &-item {
+            width: 50%;
+            height: 20em;
+            display: inline-block;
+        }
+    }
+
+    &-info {
+      width: 50%;
+    }
+}

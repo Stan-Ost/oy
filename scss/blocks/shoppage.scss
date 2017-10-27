@@ -1,0 +1,133 @@
+.shoppage {
+
+
+    .filter {
+        width: 100%;
+        background: #f3f3f3;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        color: #000;
+
+        &-title {
+
+        }
+
+        &-bar {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @media(min-width: $screen-sm) {
+                flex-direction: row;
+            }
+        }
+
+        &-list {
+            display: flex;
+            justify-content: space-between;
+
+            &-item {
+                position: relative;
+                padding-right: 2em;
+                cursor: pointer;
+                font-size: $elementSize;
+                color: $text-color;
+                transition: $transition;
+
+                @media (min-width: $screen-sm){
+                    margin-right: 3em;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+
+
+                &:hover {
+                    color: $text-hover-color;
+                    transition: $transition_hover;
+                }
+
+                &:after {
+                    content: '';
+                    display: inline-block;
+                    width: .5em;
+                    height: .5em;
+                    border-bottom: 1px solid #000;
+                    border-left: 1px solid #000;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    margin-top: -6px;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+
+    }
+
+    .catalog {
+        padding-top: 4em;
+        padding-bottom: 4em;
+        border-bottom: 2px solid #bcbcbc;
+
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+
+            @media(min-width: $screen-sm){
+
+                flex-direction: row;
+            }
+
+        }
+
+        &-item {
+
+            @media(min-width: $screen-sm){
+                margin-right: 2em;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &-image {
+                height: 20em;
+            }
+
+            &-title {
+                font-size: 1.2em;
+                color: $text-hover-color;
+                font-size: $elementSize;
+            }
+
+            &-text {
+                font-size: 1em;
+                display: block;
+                font-size: $elementSize;
+            }
+
+            &-price {
+                display: block;
+                font-size: $elementSize;
+            }
+        }
+    }
+
+    .collection {
+        padding-top: 4em;
+        padding-bottom: 4em;
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+
+            @media(min-width: $screen-sm){
+                flex-direction: row;
+            }
+        }
+    }
+}
