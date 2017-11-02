@@ -1,9 +1,18 @@
 $(document).ready(function() {
-  // // script for Burger and Main Menu
-  // $('#burger').on('click', function(){
-
-  // $('#nav').toggleClass('main-nav--close');
-
-  // $('#burger>span').toggleClass('burger__lines--close cross');
 
 });
+
+
+document.querySelector('.navigation-bar_menu-item').addEventListener('click', function(e) {
+    e.preventDefault();
+
+    var menuItem = document.querySelector('.navigation-bar_menu-item');
+
+        menuItem.classList.toggle('_active');
+
+        if(menuItem.classList.contains('_active')) {
+            document.querySelector('.navigation-bar-secondary').style.display = ('flex');
+        } else {
+             document.querySelector('.navigation-bar-secondary').style.display = ('none');
+        }
+})

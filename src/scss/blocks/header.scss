@@ -182,8 +182,9 @@
             box-sizing: content-box;
             text-transform: uppercase;
             font-size: .8em;
+            position: relative;
 
-            a {
+            &_menu-item {
                 text-decoration: none;
                 box-sizing: border-box;
                 padding: 1em 1em;
@@ -195,14 +196,23 @@
                     color: $text-hover-color;
                 }
             }
+
+            &_menu-item._active {
+                border-bottom: 2px solid $text-hover-color;
+                color: $text-hover-color;
+            }
         }
 
+
+
         .navigation-bar-secondary {
-            display: flex;
+            display: none;
+            width: 100%;
             justify-content: center;
             background: #f7f7f7;
             box-sizing: content-box;
             font-size: $elementSize;
+            position: absolute;
 
             a {
                 text-decoration: none;
