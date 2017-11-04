@@ -1,7 +1,7 @@
 body {
   min-width: 320px;
   margin: 0;
-  font-family: "Gotham Medium", sans-serif;
+  font-family: "Gotham", sans-serif;
   color: #7b7b7b; }
 
 img {
@@ -511,7 +511,7 @@ th {
         justify-content: space-between;
     box-sizing: border-box;
     padding-top: 1.5em;
-    padding-bottom: 2.5em;
+    padding-bottom: 5em;
     font-size: 11.4px; }
     .header-desktop .header__top-shipping {
       width: 25%; }
@@ -541,7 +541,6 @@ th {
       background: transparent;
       cursor: pointer;
       transition: all .375s;
-      margin-right: .5em;
       position: relative;
       color: #7b7b7b;
       font-size: 11.4px; }
@@ -620,13 +619,15 @@ th {
 
 .homepage-title {
   text-align: center;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 3em;
+  margin-bottom: 3em;
   font-weight: bold; }
   .homepage-title p {
-    font-family: "Avenir Next Ultra Light", sans-serif;
+    font-family: 'Gotham', sans-serif;
     text-transform: uppercase;
-    letter-spacing: .5em; }
+    letter-spacing: .5em;
+    font-weight: 100;
+    color: #434343; }
   .homepage-title a {
     font-size: 11.4px;
     color: #434343; }
@@ -643,7 +644,7 @@ th {
   width: 100%;
   position: relative; }
   .homepage-cell_half:first-child {
-    margin-right: 4em;
+    margin-right: 3em;
     margin-bottom: 1em; }
 
 .homepage .image_overlay {
