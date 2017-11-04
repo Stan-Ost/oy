@@ -1,7 +1,6 @@
 .footer {
     background: #f7f7f7;
     padding-bottom: 6em;
-    padding-bottom: 6em;
     font-size: .7em;
 
     &-navigation {
@@ -18,7 +17,7 @@
 
         &-list {
             list-style: none;
-            padding-left: 0;
+            padding: 0;
 
             h3 {
                 text-transform: uppercase;
@@ -116,7 +115,7 @@
         }
 
         .svg-icon {
-            font-size: 2em;
+            font-size: 1.2em;
             fill: $text-hover-color;
 
             &:hover {

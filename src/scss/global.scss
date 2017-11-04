@@ -3,6 +3,8 @@ body {
     margin: 0;
     font-family: $font-family;
     color: $text-color;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 img {
@@ -23,14 +25,14 @@ a {
 }
 
 .inner {
-    max-width: 1180px;
+    max-width: 1280px;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 0 .5em;
+    padding: 0 4em;
 }
 
 .wide_inner {
-    max-width: 1600px;
+    max-width: 1280px;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0;
