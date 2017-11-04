@@ -112,7 +112,7 @@
         justify-content: space-between;
         box-sizing: border-box;
         padding-top: 1.5em;
-        padding-bottom: 2.5em;
+        padding-bottom: 5em;
         font-size: $elementSize;
 
         &-shipping {
@@ -153,10 +153,11 @@
             background: transparent;
             cursor: pointer;
             transition: all .375s;
-            margin-right: .5em;
             position: relative;
             color: $text-color;
             font-size: $elementSize;
+
+
 
             &:hover {
                 color: $text-hover-color;
