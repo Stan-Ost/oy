@@ -27,7 +27,7 @@ a {
   max-width: 1600px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 0 .5em; }
+  padding: 0; }
 
 .svg-icon {
   width: 1.4em;
@@ -531,7 +531,7 @@ th {
         transform: rotate(45deg);
         transition: all .375s; }
     .header-desktop .header__top .logo {
-      width: 20%; }
+      width: 23%; }
     .header-desktop .header__top-buttons {
       width: 25%;
       text-align: right; }
@@ -643,7 +643,7 @@ th {
   width: 100%;
   position: relative; }
   .homepage-cell_half:first-child {
-    margin-right: 2em;
+    margin-right: 4em;
     margin-bottom: 1em; }
 
 .homepage .image_overlay {
@@ -907,7 +907,7 @@ th {
     width: 100%; }
 
   .homepage-cell_wide {
-    height: 26em;
+    height: 32em;
     -ms-flex-direction: row;
     flex-direction: row; }
 
@@ -972,6 +972,6 @@ th {
 
   .homepage-cell_wide .homepage-image:first-child,
       .homepage-cell_wide .homepage-image:last-child {
-    height: 26em; } }
+    height: 32em; } }
 
 /*# sourceMappingURL=style.css.map */
