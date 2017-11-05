@@ -790,6 +790,8 @@ th {
   padding-top: 2em;
   padding-bottom: 2em;
   color: #000; }
+  .shoppage .filter-title {
+    font-size: 2em; }
   .shoppage .filter-bar {
     display: -ms-flexbox;
     display: flex;
@@ -807,7 +809,7 @@ th {
       padding-right: 2em;
       cursor: pointer;
       font-size: 11.4px;
-      color: #7b7b7b;
+      color: #434343;
       transition: all 0.375s; }
       .shoppage .filter-list-item:hover {
         color: #434343;
@@ -825,37 +827,34 @@ th {
         margin-top: -6px;
         transform: rotate(-45deg); }
 
+.shoppage-hr {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: #bcbcbc; }
+
 .shoppage .catalog {
-  padding-top: 4em;
-  padding-bottom: 4em;
-  border-bottom: 2px solid #bcbcbc; }
+  padding-top: 2em;
+  padding-bottom: 4em; }
   .shoppage .catalog-list {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column; }
-  .shoppage .catalog-item:last-child {
-    margin-right: 0; }
-  .shoppage .catalog-item-image {
-    height: 20em; }
-  .shoppage .catalog-item-title {
-    color: #434343;
-    font-size: 11.4px; }
-  .shoppage .catalog-item-text {
-    display: block;
-    font-size: 11.4px; }
+    margin-top: 2em;
+    margin-bottom: 2em; }
+  .shoppage .catalog-item-title a {
+    color: #434343; }
+    .shoppage .catalog-item-title a:hover {
+      color: #7b7b7b; }
   .shoppage .catalog-item-price {
-    display: block;
-    font-size: 11.4px; }
+    margin-top: .5em; }
 
 .shoppage .collection {
-  padding-top: 4em;
   padding-bottom: 4em; }
   .shoppage .collection-list {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column; }
+    margin-top: 2em;
+    margin-bottom: 2em; }
 
 .blogpage {
   display: -ms-flexbox;
@@ -958,14 +957,27 @@ th {
 
   .shoppage .catalog-list {
     -ms-flex-direction: row;
-    flex-direction: row; }
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
 
   .shoppage .catalog-item {
-    margin-right: 2em; }
+    width: 25%; }
+
+  .shoppage .catalog-item-image {
+    height: 32em;
+    max-height: 40em; }
 
   .shoppage .collection-list {
     -ms-flex-direction: row;
-    flex-direction: row; }
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: baseline;
+    align-items: baseline; }
+
+  .shoppage .collection-item {
+    width: 25%; }
 
   .blogpage-item {
     width: 33%;
