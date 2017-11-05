@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: "Gotham", sans-serif;
   color: #7b7b7b;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 1px; }
 
 img {
@@ -13,23 +13,19 @@ img {
 
 a {
   text-decoration: none;
-  color: #7b7b7b;
-  transition: all 0.375s; }
+  color: #7b7b7b; }
   a:hover {
-    color: #434343;
-    transition: all 0s; }
+    color: #434343; }
 
 .inner {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
   padding: 0 4em; }
 
 .wide_inner {
-  max-width: 1280px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding: 0; }
+  width: 100%;
+  margin: 0 auto; }
 
 .svg-icon {
   width: 1.4em;
@@ -536,6 +532,8 @@ th {
     .header-desktop .header__top-buttons {
       width: 25%;
       text-align: right; }
+      .header-desktop .header__top-buttons button:first-child {
+        margin-right: 2em; }
     .header-desktop .header__top-button {
       outline: none;
       border: none;
@@ -582,7 +580,6 @@ th {
     -ms-flex-pack: center;
         justify-content: center;
     background: #f7f7f7;
-    box-sizing: content-box;
     font-size: 11.4px;
     position: absolute; }
     .header-desktop .header-navigation .navigation-bar-secondary a {
@@ -601,15 +598,17 @@ th {
 
 .homepage-image {
   width: 100%;
-  height: 28em; }
+  min-height: 32em;
+  height: 30%; }
 
 .homepage-cell_wide {
   width: 100%;
-  height: 30em;
+  height: 30%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+  margin-top: 1px; }
   .homepage-cell_wide .homepage-image:first-child,
   .homepage-cell_wide .homepage-image:last-child {
     width: 100%;
@@ -632,10 +631,10 @@ th {
     color: #434343; }
   .homepage-title a {
     font-size: 11.4px;
-    color: #434343;
+    color: #7b7b7b;
     font-weight: 400; }
     .homepage-title a:hover {
-      color: #7b7b7b; }
+      color: #434343; }
 
 .homepage-image-row {
   display: -ms-flexbox;
@@ -910,7 +909,8 @@ th {
     width: 100%; }
 
   .homepage-cell_wide {
-    height: 32em;
+    min-height: 30em;
+    height: 30%;
     -ms-flex-direction: row;
     flex-direction: row; }
 
