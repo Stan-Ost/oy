@@ -1,7 +1,6 @@
 .footer {
     background: #f7f7f7;
     padding-bottom: 6em;
-    font-size: .7em;
 
     &-navigation {
         width: 55%;
@@ -10,6 +9,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        font-size: $elementSize;
 
         @media(min-width: $screen-sm) {
             flex-direction: row;
@@ -43,6 +43,7 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+        font-size: $elementSize;
 
         @media(min-width: $screen-sm) {
             flex-direction: row;
