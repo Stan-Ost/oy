@@ -860,14 +860,24 @@ th {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row; }
+  .blogpage h2 {
+    margin-top: 3em;
+    color: #434343; }
+  .blogpage-wrapper {
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 1em;
+    text-align: center; }
   .blogpage-item {
     width: 100%;
     height: 20em;
     display: inline-block; }
-    .blogpage-item-link:hover {
-      opacity: 0.1;
-      transition: all .4s;
-      cursor: pointer; }
+    .blogpage-item-link {
+      position: relative; }
+      .blogpage-item-link:hover {
+        opacity: 0.1;
+        transition: all .4s;
+        cursor: pointer; }
 
 .productpage .inner {
   display: -ms-flexbox;
@@ -978,8 +988,13 @@ th {
     width: 25%; }
 
   .blogpage-item {
-    width: 33%;
-    height: 30em; } }
+    width: 20em;
+    height: 24em;
+    margin-right: 5%;
+    margin-bottom: 6em; }
+
+  .blogpage-item:nth-child(3n + 3) {
+    margin-right: 0; } }
 
 @media (min-width: 992px) {
 
