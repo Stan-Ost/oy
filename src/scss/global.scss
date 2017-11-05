@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: $font-family;
     color: $text-color;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 
@@ -16,26 +16,26 @@ img {
 a {
     text-decoration: none;
     color: $text-color;
-    transition: $transition;
 
     &:hover {
         color: $text-hover-color;
-        transition: $transition_hover;
     }
 }
 
 .inner {
-    max-width: 1280px;
+    // max-width: 1280px;
+    width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0 4em;
 }
 
 .wide_inner {
-    max-width: 1280px;
+    width: 100%;
+    // max-width: 1600px;
     margin: 0 auto;
-    box-sizing: border-box;
-    padding: 0;
+    // box-sizing: border-box;
+    // padding: 0;
 }
 
 .svg-icon {

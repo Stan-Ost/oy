@@ -145,6 +145,10 @@
         &-buttons {
             width: 25%;
             text-align: right;
+
+            button:first-child {
+                margin-right: 2em;
+            }
         }
 
         &-button {
@@ -156,6 +160,7 @@
             position: relative;
             color: $text-color;
             font-size: $elementSize;
+
 
 
 
@@ -215,7 +220,6 @@
             width: 100%;
             justify-content: center;
             background: #f7f7f7;
-            box-sizing: content-box;
             font-size: $elementSize;
             position: absolute;
 
