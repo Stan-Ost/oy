@@ -4,7 +4,7 @@ body {
     font-family: $font-family;
     color: $text-color;
     font-weight: 400;
-    letter-spacing: 1px;
+    letter-spacing: .1em;
 }
 
 img {
@@ -28,7 +28,11 @@ a {
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 0 4em;
+    padding: 0 .5em;
+
+    @media(min-width: $screen-md) {
+        padding: 0 4em;
+    }
 }
 
 .wide_inner {

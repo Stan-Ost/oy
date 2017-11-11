@@ -1,24 +1,34 @@
 .shoppage {
 
+    .inner {
+
+        @media(min-width: $screen-md) {
+            padding: 0 6em;
+        }
+    }
+
 
     .filter {
         width: 100%;
         background: #f3f3f3;
         padding-top: 2em;
-        padding-bottom: 2em;
+        padding-bottom: 1.2em;
         color: #000;
 
         &-title {
             font-size: 2em;
+            margin-bottom: .5em;
         }
 
         &-bar {
             display: flex;
-            flex-direction: column;
+              flex-direction: row;
             justify-content: space-between;
+            overflow-x: scroll;
 
             @media(min-width: $screen-sm) {
-                flex-direction: row;
+
+                overflow-x: unset;
             }
         }
 
@@ -79,20 +89,21 @@
         padding-bottom: 4em;
 
         &-list {
-            display: flex;
             margin-top: 2em;
             margin-bottom: 2em;
 
             @media(min-width: $screen-sm) {
+                display: flex;
                 flex-direction: row;
                 justify-content: space-between;
             }
         }
 
         &-item {
+            width: 100%;
 
             @media(min-width: $screen-sm) {
-                width: 25%;
+                width: 31%;
             }
 
             &-title {
@@ -127,6 +138,7 @@
         &-list {
 
             display: flex;
+            flex-direction: column;
             margin-top: 2em;
             margin-bottom: 2em;
 
@@ -139,6 +151,7 @@
         }
 
         &-item {
+            width: 100%;
 
             @media(min-width: $screen-sm){
                 width: 25%;
