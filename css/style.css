@@ -21,7 +21,7 @@ a {
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 0 .5em; }
+  padding: 0 1.2em; }
 
 .wide_inner {
   width: 100%;
@@ -440,21 +440,26 @@ th {
   width: 100%;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-align: end;
-      align-items: end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: baseline;
+      align-items: baseline;
   margin: 0 auto;
   box-sizing: border-box;
   padding: 0 .5em;
-  padding-top: .5em;
-  padding-bottom: .1em;
+  padding-top: 1em;
+  padding-bottom: .5em;
   position: fixed;
   top: 0;
   left: 0;
   background-color: #fff;
   z-index: 100;
   border-bottom: 1px solid #f1f1f1; }
+  .header-mobile .svg-icon {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: bottom; }
 
 .logo {
   display: inline-block;
@@ -602,7 +607,7 @@ th {
       color: red; }
 
 .homepage {
-  margin-top: 2em; }
+  margin-top: 3.7em; }
   .homepage-image {
     height: 100%; }
   .homepage-cell_wide {
@@ -619,31 +624,38 @@ th {
       height: 15em;
       background-repeat: no-repeat; }
     .homepage-cell_wide .homepage-image:first-child {
-      background-size: 100%; }
+      background-image: url("/img/homepage-image-003.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: top; }
     .homepage-cell_wide .homepage-image:last-child {
       display: none;
       background-size: 100%; }
   .homepage-title {
     text-align: center;
-    margin-top: 3em;
-    margin-bottom: 3em;
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: .7em;
+    margin-bottom: 3em; }
     .homepage-title p {
       text-transform: uppercase;
       letter-spacing: .5em;
       font-weight: 100;
-      color: #434343; }
+      color: #434343;
+      margin-bottom: 1em; }
     .homepage-title a {
       font-size: 12.5px;
       color: #7b7b7b;
-      font-weight: 400; }
+      font-weight: 400;
+      font-size: .9em; }
       .homepage-title a:hover {
         color: #434343; }
   .homepage-image-row {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
-        flex-direction: column; }
+        flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 2em; }
   .homepage-cell_half {
     width: 100%;
     position: relative; }
@@ -664,27 +676,28 @@ th {
     -ms-flex-align: center;
         align-items: center;
     background: rgba(0, 0, 0, 0.3);
-    color: #fff; }
+    color: #fff;
+    font-size: .7em; }
     .homepage .image_overlay p {
       text-transform: uppercase;
       font-family: "Avenir Next Heavy", sans-serif;
       letter-spacing: .3em;
-      margin-top: 120px; }
+      margin-top: 7em; }
     .homepage .image_overlay a {
       color: #fff;
-      font-size: 12.5px; }
+      font-size: .8em; }
       .homepage .image_overlay a:hover {
         color: #434343; }
   .homepage-bottom {
     width: 100%;
     font-size: 12.5px;
-    margin-top: 2em;
-    margin-bottom: 1em; }
+    margin-top: 4em;
+    margin-bottom: 3em; }
     .homepage-bottom-title {
       text-transform: uppercase;
       font-weight: bold;
       color: #434343;
-      margin-bottom: 2em; }
+      margin-bottom: 1em; }
     .homepage-bottom-navigation {
       width: 100%;
       display: -ms-flexbox;
@@ -706,10 +719,10 @@ th {
 
 .footer {
   background: #f7f7f7;
-  padding-bottom: 6em; }
+  padding-bottom: 3em; }
   .footer-navigation {
-    width: 55%;
-    padding-top: 2em;
+    width: 70%;
+    padding-top: 0;
     padding-bottom: 2em;
     display: -ms-flexbox;
     display: flex;
@@ -748,7 +761,8 @@ th {
       padding-right: 1em;
       background: transparent;
       position: relative;
-      margin-right: 4em; }
+      margin-right: 4em;
+      margin-bottom: .8em; }
       .footer-settings_button:hover:after {
         border-color: #434343; }
       .footer-settings_button:after {
@@ -784,6 +798,10 @@ th {
       .footer-social .svg-icon:hover {
         fill: #7b7b7b; }
 
+.shoppage .inner {
+  box-sizing: border-box;
+  padding-top: 2em; }
+
 .shoppage .filter {
   width: 100%;
   background: #f3f3f3;
@@ -792,7 +810,7 @@ th {
   margin-top: 1em;
   color: #000; }
   .shoppage .filter-title {
-    font-size: 2em; }
+    font-size: 1em; }
   .shoppage .filter-bar {
     display: -ms-flexbox;
     display: flex;
@@ -835,8 +853,8 @@ th {
   height: 1px;
   background-color: #bcbcbc; }
 
-.shoppage .catalog-list {
-  margin-top: 2em; }
+.shoppage .catalog .inner {
+  padding-top: 1em; }
 
 .shoppage .catalog-item {
   display: inline-block;
@@ -1029,7 +1047,29 @@ th {
       margin-top: .3em;
       font-weight: 300;
       text-align-last: auto; }
-    @media (min-width: 768px) {
+
+.contactspage-wide_inner {
+  height: 20em;
+  background-image: url("../../img/image-oy-003.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 100%; }
+
+.contactspage-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  box-sizing: border-box;
+  padding: 2em 0; }
+
+.contactspage-nav {
+  width: 40%; }
+
+.contactspage-description {
+  width: 60%; }
+
+@media (min-width: 768px) {
 
   .header-mobile {
     display: none;
@@ -1062,12 +1102,33 @@ th {
   .homepage-cell_wide .homepage-image:last-child {
     display: inline-block; }
 
+  .homepage-title {
+    font-size: 1em;
+    margin-top: 3em;
+    margin-bottom: 3em; }
+
+  .homepage-title p {
+    margin-bottom: inherit; }
+
   .homepage-image-row {
     -ms-flex-direction: row;
-    flex-direction: row; }
+    flex-direction: row;
+    padding: 0; }
+
+  .homepage-cell_half {
+    padding: 0; }
 
   .homepage-cell_half:first-child {
     margin-bottom: inherit; }
+
+  .homepage .image_overlay {
+    font-size: 1em; }
+
+  .homepage .image_overlay a {
+    font-size: 12.5px; }
+
+  .homepage-bottom-title {
+    margin-bottom: 2em; }
 
   .homepage-bottom-navigation {
     -ms-flex-direction: row;
@@ -1076,7 +1137,12 @@ th {
   .homepage-bottom-link {
     margin-bottom: 0; }
 
+  .footer {
+    padding-bottom: 6em; }
+
   .footer-navigation {
+    width: 55%;
+    padding-top: 2em;
     -ms-flex-direction: row;
     flex-direction: row; }
 
@@ -1156,7 +1222,8 @@ th {
 
   .blogpage-item:nth-child(3n + 3) {
     margin-right: 0; } }
-    @media (min-width: 992px) {
+
+@media (min-width: 992px) {
 
   .inner {
     padding: 0 4em; }
@@ -1167,7 +1234,8 @@ th {
 
   .homepage .image_overlay p {
     font-size: 1.2em;
-    margin-top: 190px; }
+    margin-top: 190px;
+    margin-top: 120px; }
 
   .homepage-bottom {
     width: 70%;
