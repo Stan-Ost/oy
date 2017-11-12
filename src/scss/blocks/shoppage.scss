@@ -101,12 +101,15 @@
 
         &-item {
             width: 100%;
+            margin-bottom: 2em;
 
             @media(min-width: $screen-sm) {
                 width: 31%;
             }
 
             &-title {
+                margin-bottom: .5em;
+
                 a {
                     color: $text-hover-color;
 

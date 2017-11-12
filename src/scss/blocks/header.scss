@@ -13,9 +13,17 @@
     box-sizing: border-box;
     padding: 0 .5em;
     padding-top: .5em;
+    padding-bottom: .1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 100;
+    border-bottom: 1px solid $text-color;
 
     @media(min-width: $screen-sm) {
         display: none;
+        border-bottom-color: transparent;
     }
 }
 
