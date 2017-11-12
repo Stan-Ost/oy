@@ -11,13 +11,23 @@
     .filter {
         width: 100%;
         background: #f3f3f3;
-        padding-top: 2em;
         padding-bottom: 1.2em;
+        padding-top: 1em;
+        margin-top: 1em;
         color: #000;
+
+        @media(min-width: $screen-sm) {
+            padding-top: 2em;
+
+        }
 
         &-title {
             font-size: 2em;
-            margin-bottom: .5em;
+
+            @media(min-width: $screen-sm) {
+                margin-top: .5em;
+                margin-bottom: .5em;
+            }
         }
 
         &-bar {
@@ -85,33 +95,54 @@
     }
 
     .catalog {
-        padding-top: 2em;
-        padding-bottom: 4em;
+
+        @media(min-width: $screen-sm) {
+            padding-top: 2em;
+            padding-bottom: 4em;
+        }
 
         &-list {
             margin-top: 2em;
-            margin-bottom: 2em;
 
             @media(min-width: $screen-sm) {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+                margin-bottom: 2em;
             }
         }
 
         &-item {
-            width: 100%;
+            display: inline-block;
+            width: 45%;
             margin-bottom: 2em;
+            margin-right: 1.5em;
+            font-size: .7em;
+
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+
 
             @media(min-width: $screen-sm) {
                 width: 31%;
+                margin-right: 0;
+                font-size: 1em;
             }
 
             &-title {
                 margin-bottom: .5em;
 
+                @media(min-width: $screen-sm) {
+
+                }
+
                 a {
                     color: $text-hover-color;
+
+                    @media(min-width: $screen-sm) {
+
+                    }
 
                     &:hover {
                         color: $text-color;
@@ -135,26 +166,34 @@
     }
 
     .collection {
-        // padding-top: 2em;
-        padding-bottom: 4em;
+
+        @media(min-width: $screen-sm) {
+            padding-bottom: 4em;
+        }
 
         &-list {
 
-            display: flex;
-            flex-direction: column;
             margin-top: 2em;
-            margin-bottom: 2em;
-
 
             @media(min-width: $screen-sm) {
+                display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: baseline;
+                margin-bottom: 2em;
             }
         }
 
         &-item {
-            width: 100%;
+            display: inline-block;
+            width: 45%;
+            margin-bottom: 2em;
+            margin-right: 1.5em;
+
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+
 
             @media(min-width: $screen-sm){
                 width: 25%;

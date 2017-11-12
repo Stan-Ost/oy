@@ -1,4 +1,9 @@
 .homepage {
+    margin-top: 2em;
+
+    @media(min-width: $screen-sm) {
+        margin-top: 0;
+    }
 
     &-image {
         height: 100%;
