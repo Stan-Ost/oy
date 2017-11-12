@@ -1,6 +1,9 @@
 .shoppage {
 
     .inner {
+        box-sizing: border-box;
+        padding-top: 2em;
+
 
         @media(min-width: $screen-md) {
             padding: 0 6em;
@@ -22,7 +25,7 @@
         }
 
         &-title {
-            font-size: 2em;
+            font-size: 1em;
 
             @media(min-width: $screen-sm) {
                 margin-top: .5em;
@@ -96,13 +99,16 @@
 
     .catalog {
 
+        .inner {
+            padding-top: 1em;
+        }
+
         @media(min-width: $screen-sm) {
             padding-top: 2em;
             padding-bottom: 4em;
         }
 
         &-list {
-            margin-top: 2em;
 
             @media(min-width: $screen-sm) {
                 display: flex;

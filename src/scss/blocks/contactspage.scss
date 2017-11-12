@@ -1,0 +1,25 @@
+.contactspage {
+
+    &-wide_inner {
+        height: 20em;
+        background-image: url('../../img/image-oy-003.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 100%;
+    }
+
+    &-block {
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        padding: 2em 0;
+    }
+
+    &-nav {
+        width: 40%;
+    }
+
+    &-description {
+        width: 60%;
+    }
+}

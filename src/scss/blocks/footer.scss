@@ -1,10 +1,14 @@
 .footer {
     background: #f7f7f7;
-    padding-bottom: 6em;
+    padding-bottom: 3em;
+
+    @media(min-width: $screen-sm) {
+        padding-bottom: 6em;
+    }
 
     &-navigation {
-        width: 55%;
-        padding-top: 2em;
+        width: 70%;
+        padding-top: 0;
         padding-bottom: 2em;
         display: flex;
         flex-direction: column;
@@ -12,6 +16,8 @@
         font-size: $elementSize;
 
         @media(min-width: $screen-sm) {
+            width: 55%;
+            padding-top: 2em;
             flex-direction: row;
         }
 
@@ -65,6 +71,7 @@
             background: transparent;
             position: relative;
             margin-right: 4em;
+            margin-bottom: .8em;
 
 
             &:hover:after {
