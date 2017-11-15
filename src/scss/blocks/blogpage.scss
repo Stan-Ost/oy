@@ -9,7 +9,6 @@
         color: $text-hover-color;
         font-size: 2em;
         font-weight: normal;
-        // color: #000;
         text-align: center;
 
         @media(min-width: $screen-sm) {
@@ -20,7 +19,6 @@
     &-wrapper {
         margin: 0 auto;
         box-sizing: border-box;
-        // text-align: center;
     }
 
 
@@ -28,16 +26,44 @@
         width: 100%;
         height: 20em;
         display: inline-block;
+        position: relative;
 
         @media(min-width: $screen-sm) {
             width: 20em;
             height: 24em;
-            // margin-right: 5%;
             margin-right: 7%;
             margin-bottom: 6em;
 
             &:nth-child(3n + 3) {
                 margin-right: 0;
+            }
+
+            &-hover {
+                display: none;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: red;
+
+                &_text {
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+                &_icon {
+                    width: 3em;
+                    height: 3em;
+                    text-align: right;
+                    position: absolute;
+                    right: 1em;
+                    bottom: 1em;
+                }
+
+                &:hover {
+                    display: inline-block;
+                }
             }
 
         }
@@ -47,9 +73,9 @@
             position: relative;
 
             &:hover {
-                opacity: 0.1;
-                transition: all .4s;
-                cursor: pointer;
+                // opacity: 0.1;
+                // transition: all .4s;
+                // cursor: pointer;
             }
         }
     }
