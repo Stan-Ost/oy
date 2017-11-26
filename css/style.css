@@ -798,6 +798,29 @@ th {
       .footer-social .svg-icon:hover {
         fill: #7b7b7b; }
 
+.accordion {
+  cursor: pointer;
+  position: relative; }
+  .accordion:after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 1em;
+    bottom: 30%;
+    border-bottom: 1px solid #7b7b7b;
+    border-right: 1px solid #7b7b7b;
+    transform: rotate(45deg); }
+
+.panel {
+  display: none;
+  transition: all .2s ease-out; }
+
+.accordion._active:after {
+  transform: rotate(-135deg);
+  bottom: 0; }
+
 .shoppage .inner {
   box-sizing: border-box;
   padding-top: 2em; }
