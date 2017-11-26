@@ -55,3 +55,89 @@ a {
     }
 }
 
+
+
+
+div.tab {
+    // overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #f1f1f1;
+
+
+    @media(min-width: $screen-sm) {
+        width: 40%;
+        max-width: 16em;
+        min-width: 16em;
+        margin-right: 15%;
+        border-bottom: none;
+    }
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 3em 0;
+
+        @media(min-width: $screen-sm) {
+            flex-direction: row;
+        }
+    }
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    padding-left: 0;
+    transition: 0.3s;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    color: $text-color;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    @media(min-width: $screen-sm) {
+        padding: 14px 16px;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    color: $text-hover-color;
+}
+
+/* Create an active/current tablink class */
+div.tab button._active {
+    text-decoration: underline;
+    color: $text-hover-color;
+}
+
+/* Style the tab content */
+.tabcontent {
+
+    display: none;
+    text-align: left !important;
+
+    @media(min-width: $screen-sm){
+        width: 60%;
+    }
+
+    &-title {
+        color: $text-hover-color;
+        margin-top: .5em;
+    }
+
+    &-wrapper {
+        display: inline-block;
+        text-align: left;
+    }
+}
+

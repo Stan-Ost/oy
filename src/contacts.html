@@ -101,29 +101,44 @@
         </div>
 
         <div class="inner">
-            <div class="contactspage-block">
-                <nav class="contactspage-nav">
-                    <p class="contactspage-nav-item">Contact us</p>
-                    <p class="contactspage-nav-item">Payment</p>
-                    <p class="contactspage-nav-item">Shipping</p>
-                    <p class="contactspage-nav-item">Returns</p>
-                </nav>
+            <div class="tab-wrapper">
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'Contact')">Contact us</button>
+                    <button class="tablinks" onclick="openTab(event, 'Payment')">Payment</button>
+                    <button class="tablinks" onclick="openTab(event, 'Shipping')">Shipping</button>
+                    <button class="tablinks" onclick="openTab(event, 'Returns')">Returns</button>
+                </div>
 
-                <div class="contactspage-description">
-                    <div class="contactspage-description-item">
-                        <h3>General Enquires</h3>
+                <div class="tabcontent-wrapper">
+                    <div id="Contact" class="tabcontent">
+                        <h3 class="tabcontent-title">General Enquires</h3>
                         <p>If you have any quires or if we can any further assistance please do not hesitate to contact us by any means preferable to you. For your convinience olyaYunakova offers global assitance 24-hours a day, seven days a week.</p>
-
-                        <h3>Email</h3>
+                        <h3 class="tabcontent-title">Email</h3>
                         <p><a href="/">olya@olyaYunakova.com</a></p>
 
-                        <h3>Post</h3>
+                        <h3 class="tabcontent-title">Post</h3>
                         <p>
-                            Olya Yunakove Inc <br />
-                            160 west 73rd street, 1#A <br />
-                            New York NY 10023 <br />
-                            United States
+                          Olya Yunakove Inc <br />
+                          160 west 73rd street, 1#A <br />
+                          New York NY 10023 <br />
+                          United States
                         </p>
+                    </div>
+
+                    <div id="Payment" class="tabcontent">
+                        <h3 class="tabcontent-title">Payment</h3>
+                        <p>OlyaYunakova accepts the following methods of payment:
+                        Visa, American Express, MasterCard, Discover, PayPal, Apple Pay.</p>
+                    </div>
+
+                    <div id="Shipping" class="tabcontent">
+                        <h3 class="tabcontent-title">Shipping</h3>
+                        <p>Shipping text is here.</p>
+                    </div>
+
+                    <div id="Returns" class="tabcontent">
+                        <h3 class="tabcontent-title">Returns</h3>
+                        <p>Returns text is here.</p>
                     </div>
                 </div>
             </div>
@@ -138,31 +153,39 @@
 
             <div class="footer-navigation">
 
-                <ul class="footer-navigation-list">
-                  <h3>Customer Service</h3>
-                  <li class="footer-navigation-item"><a href="/">Contact Us</a></li>
-                  <li class="footer-navigation-item"><a href="/">Payment</a></li>
-                  <li class="footer-navigation-item"><a href="/">Shipping</a></li>
-                  <li class="footer-navigation-item"><a href="/">Returns</a></li>
-                  <li class="footer-navigation-item"><a href="/">Store Locator</a></li>
-                </ul>
+                <div style="width:15em">
+                    <h3 class="accordion _tick">Customer Service</h3>
+                    <ul class="footer-navigation-list panel">
+                        <li class="footer-navigation-item"><a href="/">Contact Us</a></li>
+                        <li class="footer-navigation-item"><a href="/">Payment</a></li>
+                        <li class="footer-navigation-item"><a href="/">Shipping</a></li>
+                        <li class="footer-navigation-item"><a href="/">Returns</a></li>
+                        <li class="footer-navigation-item"><a href="/">Store Locator</a></li>
+                    </ul>
+                </div>
 
-                <ul class="footer-navigation-list">
-                  <h3>Our company</h3>
-                  <li class="footer-navigation-item"><a href="/">Our History</a></li>
-                  <li class="footer-navigation-item"><a href="/">olyaYunakova Inc</a></li>
-                  <li class="footer-navigation-item"><a href="/">Careers</a></li>
-                  <li class="footer-navigation-item"><a href="/">Corporate Responsobility</a></li>
-                  <li class="footer-navigation-item"><a href="/">Store Locator</a></li>
-                </ul>
 
-                <ul class="footer-navigation-list">
-                  <h3>Legal & cookies</h3>
-                  <li class="footer-navigation-item"><a href="/">Terms & Conditions</a></li>
-                  <li class="footer-navigation-item"><a href="/">Privacy Policy</a></li>
-                  <li class="footer-navigation-item"><a href="/">Cookies Policy</a></li>
-                  <li class="footer-navigation-item"><a href="/">Accessibility Statement</a></li>
-                </ul>
+                <div style="width:15em">
+                    <h3 class="accordion _tick">Our company</h3>
+                    <ul class="footer-navigation-list panel">
+                        <li class="footer-navigation-item"><a href="/">Our History</a></li>
+                        <li class="footer-navigation-item"><a href="/">olyaYunakova Inc</a></li>
+                        <li class="footer-navigation-item"><a href="/">Careers</a></li>
+                        <li class="footer-navigation-item"><a href="/">Corporate Responsobility</a></li>
+                        <li class="footer-navigation-item"><a href="/">Store Locator</a></li>
+                    </ul>
+                </div>
+
+                <div style="width:15em">
+                    <h3 class="accordion _tick">Legal & cookies</h3>
+                    <ul class="footer-navigation-list panel">
+                        <li class="footer-navigation-item"><a href="/">Terms & Conditions</a></li>
+                        <li class="footer-navigation-item"><a href="/">Privacy Policy</a></li>
+                        <li class="footer-navigation-item"><a href="/">Cookies Policy</a></li>
+                        <li class="footer-navigation-item"><a href="/">Accessibility Statement</a></li>
+                    </ul>
+                </div>
+
 
             </div>
 

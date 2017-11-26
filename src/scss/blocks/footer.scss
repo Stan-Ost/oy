@@ -138,17 +138,33 @@
     cursor: pointer;
     position: relative;
 
-    &:after {
-        content: '';
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        position: absolute;
-        right: 1em;
-        bottom: 30%;
-        border-bottom: 1px solid $text-color;
-        border-right: 1px solid $text-color;
-        transform: rotate(45deg);
+    &._tick {
+
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            right: 1em;
+            bottom: 30%;
+            border-bottom: 1px solid $text-color;
+            border-right: 1px solid $text-color;
+            transform: rotate(45deg);
+        }
+    }
+
+    &._plus {
+        position: relative;
+
+        &:after {
+            content: '\02795'; /* Unicode character for "plus" sign (+) */
+            font-size: .9em;
+            color: #777;
+            margin-left: 5px;
+            position: absolute;
+            right: 0;
+        }
     }
 }
 
@@ -157,7 +173,13 @@
     transition: all .2s ease-out;
 }
 
-.accordion._active {
+.accordion._plus._active {
+    &:after {
+        content: "\2796";
+    }
+}
+
+.accordion._tick._active {
     &:after {
         transform: rotate(-135deg);
         bottom: 0;

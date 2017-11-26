@@ -54,9 +54,10 @@
         font-size: 1em;
         font-weight: normal;
         color: $text-hover-color;
+        text-transform: uppercase;
 
         @media(min-width: $screen-sm) {
-            font-size: 1.5em;
+            font-size: 1.4em;
         }
     }
 
@@ -66,7 +67,7 @@
 
     &-colors {
         box-sizing: border-box;
-        padding: 1em 0;
+        padding: 3em 0;
 
         &-title {
             font-size: $elementSize;
@@ -96,6 +97,7 @@
 
     &-shipping {
         font-size: $elementSize;
+        margin-top: 3em;
     }
 
     &-size_helper {
@@ -106,6 +108,7 @@
     &-sizes {
         box-sizing: border-box;
         padding: 2em 0;
+        padding-top: 0;
 
         &_button {
             background-color: transparent;
@@ -113,6 +116,10 @@
             border-radius: 5px;
             color: $text-color;
             outline: none;
+
+            &:first-child {
+                padding-left: 0;
+            }
 
             &:hover {
                 color: $text-hover-color;
@@ -131,7 +138,7 @@
         border: none;
         outline: none;
         box-sizing: border-box;
-        padding: .5em 3em;
+        padding: .7em 3em;
         border-radius: .1em;
 
         @media(min-width: $screen-sm) {
@@ -147,46 +154,56 @@
         }
     }
 
+
     &-accordeon {
         box-sizing: border-box;
         padding: 1em 0;
 
-        &_item {
+        &-item {
+            border-top: 1px solid #e6e6e6;
             box-sizing: border-box;
-            padding: 1.5em 0;
-            border-bottom: 1px solid #f1f1f1;
-            margin: 0;
-            border-collapse: collapse;
+            padding: .5em 0;
+            &:last-child {
+                border-bottom: 1px solid #e6e6e6;
+            }
+        }
+
+        &-title {
+            font-size: $elementSize;
+            box-sizing: border-box;
             cursor: pointer;
             text-transform: uppercase;
-             font-size: $elementSize;
+            color: $text-hover-color;
+
+            &._active {
+
+            }
 
             &:hover {
-                color: $text-hover-color;
+                color: $text-color;
             }
+        }
 
-            &:first-child {
-                border-top: 1px solid #f1f1f1;
-            }
+        &-panel {
+            // display: none;
         }
     }
 
     &-social {
         width: 100%;
-        font-size: 1em;
+        font-size: .8em;
         box-sizing: border-box;
         padding: 1em 0;
-        display: flex;
-        justify-content: space-around;
+        text-align: center;
 
         @media(min-width: $screen-sm) {
-            padding-top: 6em;
+            padding-top: 5em;
         }
 
         svg {
 
             @media(min-width: $screen-sm) {
-                margin-right: 3em;
+                margin-right: 1em;
             }
         }
     }
@@ -209,7 +226,8 @@
             width: 100%;
 
             @media(min-width: $screen-sm) {
-                width: 60%;
+                width: 44em;
+                height: auto;
             }
         }
 
@@ -221,10 +239,9 @@
             box-sizing: border-box;
 
 
-
             @media(min-width: $screen-sm) {
                 width: 40%;
-                padding: 20em 4em;
+                padding: 6em 4em;
                 padding-right: 0;
             }
         }

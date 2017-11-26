@@ -1,28 +1,26 @@
 $(document).ready(function() {
 
-    // $(".navigation-bar_menu-item").hover(function(event) {
-    //     event.preventDefault();
-    //     $(this).toggleClass("_active");
+    $(".navigation-bar_menu-item").hover(function(event) {
+        event.preventDefault();
+        $(this).toggleClass("_active");
 
-    //     var menuItem = document.querySelector('.navigation-bar_menu-item');
-    //     if(menuItem.classList.contains('_active')) {
-    //         document.querySelector('.navigation-bar-secondary').style.display = ('flex');
-    //     }
-    // });
+        var menuItem = document.querySelector('.navigation-bar_menu-item');
+        if(menuItem.classList.contains('_active')) {
+            document.querySelector('.navigation-bar-secondary').style.display = ('flex');
+        }
+    });
 
-    // $('.homepage').hover(function() {
-    //    $(".navigation-bar_menu-item ._active").removeClass('_active');
-    //     if(!menuItem.classList.contains('_active')) {
-    //         document.querySelector('.navigation-bar-secondary').style.display = ('none');
-    //     }
-    // });
+    $('.homepage').hover(function() {
+       $(".navigation-bar_menu-item ._active").removeClass('_active');
+        if(!menuItem.classList.contains('_active')) {
+            document.querySelector('.navigation-bar-secondary').style.display = ('none');
+        }
+    });
 
 
 });
 
-
-
-
+// Accordion
 
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -43,4 +41,25 @@ for (i = 0; i < acc.length; i++) {
     }
 }
 
+// Tabs
 
+function openTab(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace("_active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "inline-block";
+    evt.currentTarget.className += "_active";
+}
