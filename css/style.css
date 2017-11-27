@@ -996,7 +996,7 @@ th {
 
 .productpage {
   box-sizing: border-box;
-  padding-top: 5em;
+  padding-top: 3.9em;
   padding-bottom: 5em; }
   .productpage .product {
     display: -ms-flexbox;
@@ -1016,9 +1016,10 @@ th {
     width: 100%; }
   .productpage-title {
     font-size: 1em;
-    font-weight: normal;
+    font-weight: bold;
     color: #434343;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    letter-spacing: 2px; }
   .productpage-price {
     color: #434343; }
   .productpage-colors {
@@ -1056,7 +1057,11 @@ th {
       border: 1px solid transparent;
       border-radius: 5px;
       color: #7b7b7b;
-      outline: none; }
+      outline: none;
+      font-weight: bold;
+      padding: 0;
+      margin-right: 1em;
+      letter-spacing: 2px; }
       .productpage-sizes_button:first-child {
         padding-left: 0; }
       .productpage-sizes_button:hover {
@@ -1071,14 +1076,16 @@ th {
     outline: none;
     box-sizing: border-box;
     padding: .7em 3em;
-    border-radius: .1em; }
+    border-radius: .1em;
+    letter-spacing: 2px; }
     .productpage-button:hover {
       background-color: #c4b1a2; }
     .productpage-button:active {
       transform: translateY(1px); }
   .productpage-accordeon {
     box-sizing: border-box;
-    padding: 1em 0; }
+    padding: 1em 0;
+    margin-top: 2em; }
     .productpage-accordeon-item {
       border-top: 1px solid #e6e6e6;
       box-sizing: border-box;
@@ -1361,10 +1368,11 @@ th {
   .productpage-info {
     width: 40%;
     box-sizing: border-box;
-    padding: 0 2em; }
+    padding: 0 1em; }
 
   .productpage-title {
-    font-size: 1.4em; }
+    font-size: 1.3em;
+    font-weight: bold; }
 
   .productpage-button {
     width: initial; }
@@ -1373,12 +1381,13 @@ th {
     padding-top: 5em; }
 
   .productpage-social svg {
-    margin-right: 1em; }
+    margin-right: 2em; }
 
   .productpage-delivery {
     -ms-flex-direction: row;
     flex-direction: row;
-    padding: 6em 0; }
+    padding: 4em 0;
+    padding-left: 5em; }
 
   .productpage-delivery-image {
     width: 44em;
