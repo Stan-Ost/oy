@@ -24,6 +24,7 @@
         &-list {
             list-style: none;
             padding: 0;
+            margin: 0;
 
             h3 {
                 text-transform: uppercase;
@@ -133,37 +134,35 @@
     }
 }
 
+._tick {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid $text-color;
+    border-right: 1px solid $text-color;
+    transform: rotate(45deg);
+    margin-left: 1em;
+    margin-bottom: 1px;
+}
+
 
 .accordion {
     cursor: pointer;
     position: relative;
-
-    &._tick {
-
-        &:after {
-            content: '';
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            position: absolute;
-            right: 1em;
-            bottom: 30%;
-            border-bottom: 1px solid $text-color;
-            border-right: 1px solid $text-color;
-            transform: rotate(45deg);
-        }
-    }
+    transition: all 5s ease;
 
     &._plus {
         position: relative;
 
         &:after {
-            content: '\02795'; /* Unicode character for "plus" sign (+) */
-            font-size: .9em;
+            content: '+'; /* Unicode character for "plus" sign (\02795) */
+            font-size: 2em;
             color: #777;
             margin-left: 5px;
             position: absolute;
             right: 0;
+            top: 0;
+            line-height: .5em;
         }
     }
 }
@@ -174,10 +173,12 @@
 }
 
 .accordion._plus._active {
+
     &:after {
-        content: "\2796";
+        content: "–"; // 2796
     }
 }
+
 
 .accordion._tick._active {
     &:after {

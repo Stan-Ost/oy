@@ -5,11 +5,14 @@
     <title>Olya Yunakova | Bathing Suit and Resort Wear Store</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <header class="header">
         <div class="inner">
         <div class="header-mobile">
+
+            <svg  class="svg-icon burger"><use xlink:href="#burger"></use></svg>
 
             <a href="/">
                 <svg  class="svg-icon"><use xlink:href="#svg-search"></use></svg>
@@ -39,7 +42,7 @@
                           <a href="/">Bikini Tops</a>
                           <a href="/">Bikini Bottoms</a>
                           <a href="/">Maillots</a>
-                          <a href="/">SALE</a>
+                          <a class="_sale" href="/">SALE</a>
                       </div>
                   </div>
 
@@ -123,21 +126,21 @@
 
                 <div class="homepage-cell_half">
                     <div class="homepage-image">
-                        <img src="img/homepage-image-004.jpg" alt="">
+                        <img class="homepage-image" src="img/homepage-image-004.jpg" alt="">
                     </div>
-                    <div class="image_overlay">
+                    <span class="image_overlay">
                         <p>The little black bikini</p>
                         <a href="/">Shop bikini</a>
-                    </div>
+                    </span>
                 </div>
                 <div class="homepage-cell_half">
                     <div class="homepage-image">
-                        <img src="img/homepage-image-001.jpg" alt="">
+                        <img class="homepage-image" src="img/homepage-image-001.jpg" alt="">
                     </div>
-                    <div class="image_overlay">
+                    <span class="image_overlay">
                         <p>The cocktail maillot</p>
                         <a href="/">Shop maillot</a>
-                    </div>
+                    </span>
 
                 </div>
             </div>
@@ -161,7 +164,7 @@
             <div class="footer-navigation">
 
                 <div style="width:15em">
-                    <h3 class="accordion _tick">Customer Service</h3>
+                    <h3 class="accordion">Customer Service <span class="_tick"></span></h3>
                     <ul class="footer-navigation-list panel">
                         <li class="footer-navigation-item"><a href="/">Contact Us</a></li>
                         <li class="footer-navigation-item"><a href="/">Payment</a></li>
@@ -173,7 +176,7 @@
 
 
                 <div style="width:15em">
-                    <h3 class="accordion _tick">Our company</h3>
+                    <h3 class="accordion">Our company <span class="_tick"></span></h3>
                     <ul class="footer-navigation-list panel">
                         <li class="footer-navigation-item"><a href="/">Our History</a></li>
                         <li class="footer-navigation-item"><a href="/">olyaYunakova Inc</a></li>
@@ -184,7 +187,7 @@
                 </div>
 
                 <div style="width:15em">
-                    <h3 class="accordion _tick">Legal & cookies</h3>
+                    <h3 class="accordion">Legal & cookies <span class="_tick"></span></h3>
                     <ul class="footer-navigation-list panel">
                         <li class="footer-navigation-item"><a href="/">Terms & Conditions</a></li>
                         <li class="footer-navigation-item"><a href="/">Privacy Policy</a></li>
@@ -221,7 +224,8 @@
         </div>
     </footer>
 
-<script  type="text/javascript" src="js/script.min.js"></script>
+<script src="js/script.min.js"></script>
+
 </body>
 </html>
 

@@ -17,6 +17,15 @@ $(document).ready(function() {
         }
     });
 
+    // Burger
+
+      // script for Burger and Main Menu
+    $('.burger').on('click', function(){
+
+        $('.navigation-mobile').toggleClass('_active');
+    });
+
+    // Slider
 
 });
 
@@ -63,3 +72,11 @@ function openTab(evt, cityName) {
     document.getElementById(cityName).style.display = "inline-block";
     evt.currentTarget.className += "_active";
 }
+
+
+
+
+$(document).ready(function(){
+  $('.productpage-images').owlCarousel();
+});
+
