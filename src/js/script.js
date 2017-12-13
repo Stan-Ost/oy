@@ -27,7 +27,30 @@ $(document).ready(function() {
 
     // Slider
 
+    $('.productpage-images').slick({
+        breakpoint: 767,
+        dots: true,
+        arrows: false,
+        speed: 300,
+        slidesToShow: 1,
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: 'unslick'
+            }
+        ]
+    });
+
+
+        //
+
+
+
+
+
 });
+
 
 // Accordion
 
@@ -76,7 +99,4 @@ function openTab(evt, cityName) {
 
 
 
-$(document).ready(function(){
-  $('.productpage-images').owlCarousel();
-});
 

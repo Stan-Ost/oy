@@ -46,25 +46,28 @@
         }
 
         &-list {
-            display: flex;
+            display: inline-flex;
             justify-content: space-between;
 
             &-item {
+                display: inline-block;
                 position: relative;
-                padding-right: 2em;
+                padding-right: 1em;
                 cursor: pointer;
-                font-size: $elementSize;
+                font-size: .65em;
                 color: $text-hover-color;
                 transition: $transition;
+                margin-right: 1em;
 
                 @media (min-width: $screen-sm){
                     margin-right: 3em;
+                    padding-right: 2em;
+                    font-size: $elementSize;
 
                     &:last-child {
                         margin-right: 0;
                     }
                 }
-
 
 
                 &:hover {
@@ -82,7 +85,7 @@
                     position: absolute;
                     right: 0;
                     top: 50%;
-                    margin-top: -6px;
+                    margin-top: -.3em;
                     transform: rotate(-45deg);
                 }
             }

@@ -177,6 +177,7 @@ gulp.task('js', function () {
       dirs.source + '/js/jquery-3.1.0.min.js',
       dirs.source + '/js/jquery-migrate-1.4.1.min.js',
       dirs.source + '/js/script.js',
+      dirs.source + '/js/slick.js',
     ])
     .pipe(plumber({ errorHandler: onError }))             // не останавливаем автоматику при ошибках
     .pipe(concat('script.min.js'))                        // конкатенируем все файлы в один с указанным именем
