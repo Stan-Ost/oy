@@ -494,6 +494,8 @@ th {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-align: baseline;
+      align-items: baseline;
   margin: 0 auto;
   box-sizing: border-box;
   padding: 0 .5em;
@@ -593,7 +595,7 @@ th {
         position: absolute;
         border-bottom: 1px solid #7b7b7b;
         border-right: 1px solid #7b7b7b;
-        top: 0;
+        top: 20%;
         right: -1em;
         transform: rotate(45deg);
         transition: all .375s; }
@@ -861,7 +863,9 @@ th {
 .accordion {
   cursor: pointer;
   position: relative;
-  transition: all 5s ease; }
+  transition: all 5s ease;
+  font-weight: lighter;
+  white-space: nowrap; }
   .accordion._plus {
     position: relative; }
     .accordion._plus:after {
@@ -1569,8 +1573,7 @@ th {
     height: 32em; }
   .homepage .image_overlay p{
     font-size: 1.2em;
-    margin-top: 190px;
-    margin-top: 120px; }
+    margin-top: 10em; }
   .homepage-bottom{
     width: 70%;
     margin-top: 8em;
