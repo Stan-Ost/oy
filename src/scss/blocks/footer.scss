@@ -156,6 +156,8 @@
     cursor: pointer;
     position: relative;
     transition: all 5s ease;
+    font-weight: lighter;
+    white-space: nowrap;
 
     &._plus {
         position: relative;
