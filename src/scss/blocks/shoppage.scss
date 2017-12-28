@@ -26,6 +26,7 @@
 
         &-title {
             font-size: 1.5em;
+            color: $text-hover-color;
 
             @media(min-width: $screen-sm) {
                 margin-top: .5em;
@@ -35,7 +36,7 @@
 
         &-bar {
             display: flex;
-              flex-direction: row;
+            flex-direction: row;
             justify-content: space-between;
             overflow-x: scroll;
 
@@ -55,9 +56,10 @@
                 padding-right: 1em;
                 cursor: pointer;
                 font-size: .65em;
-                color: $text-hover-color;
+                color: $text-color;
                 transition: $transition;
                 margin-right: 1em;
+
 
                 @media (min-width: $screen-sm){
                     margin-right: 3em;
