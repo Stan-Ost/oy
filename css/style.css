@@ -904,7 +904,8 @@ th {
   margin-top: 1em;
   color: #000; }
   .shoppage .filter-title {
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    color: #434343; }
   .shoppage .filter-bar {
     display: -ms-flexbox;
     display: flex;
@@ -924,7 +925,7 @@ th {
       padding-right: 1em;
       cursor: pointer;
       font-size: .65em;
-      color: #434343;
+      color: #7b7b7b;
       transition: all 0.375s;
       margin-right: 1em; }
       .shoppage .filter-list-item:hover {
@@ -986,11 +987,11 @@ th {
   -ms-flex-direction: row;
       flex-direction: row; }
   .blogpage h2 {
-    margin-top: 2em;
+    margin-top: 2.5em;
     margin-bottom: .5em;
     color: #434343;
-    font-size: 2em;
-    font-weight: normal;
+    font-size: 1.5em;
+    font-weight: lighter;
     text-align: center; }
   .blogpage-wrapper {
     margin: 0 auto;
