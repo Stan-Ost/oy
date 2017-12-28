@@ -511,7 +511,6 @@ th {
     width: 1.2em;
     height: 1.2em;
     display: inline-block;
-    vertical-align: bottom;
     fill: #434343;
     cursor: pointer;
     margin-right: .5em; }
@@ -549,10 +548,9 @@ th {
       display: block;
       color: #434343;
       text-decoration: none;
-      font-size: 1.2em;
-      padding: 1em;
-      padding-left: .5em;
-      background-color: #f1f1f1; }
+      font-size: .8em;
+      padding: .8em 1em;
+      padding-left: .5em; }
       .navigation-mobile .group-list_title:hover {
         background: #e9e9e9; }
     .navigation-mobile .group-list_items {
@@ -563,8 +561,8 @@ th {
       .navigation-mobile .group-list_items a {
         color: #7b7b7b;
         text-decoration: none;
-        font-size: 1em;
-        padding: 1em;
+        font-size: .8em;
+        padding: .8em 1em;
         padding-left: .5em; }
         .navigation-mobile .group-list_items a:hover {
           background: #e9e9e9; }
@@ -719,7 +717,7 @@ th {
     -ms-flex-direction: column;
         flex-direction: column;
     box-sizing: border-box;
-    padding: 0 2em; }
+    padding: 0; }
   .homepage-cell_half {
     width: 100%;
     position: relative; }
@@ -754,7 +752,7 @@ th {
         color: #434343; }
   .homepage-bottom {
     width: 100%;
-    font-size: 12.5px;
+    font-size: .6em;
     margin-top: 4em;
     margin-bottom: 3em; }
     .homepage-bottom-title {
@@ -774,7 +772,7 @@ th {
     .homepage-bottom-link {
       color: #7b7b7b;
       margin-bottom: 1em;
-      font-size: 12.5px; }
+      font-size: 1em; }
       .homepage-bottom-link:hover {
         color: #434343; }
     .homepage-bottom .svg-icon {
@@ -1437,7 +1435,8 @@ th {
     -ms-flex-direction: row;
     flex-direction: row; }
   .homepage-bottom-link{
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-size: 12.5px; }
   .footer{
     padding-bottom: 6em; }
   .footer-navigation{
@@ -1582,7 +1581,8 @@ th {
   .homepage-bottom{
     width: 70%;
     margin-top: 8em;
-    margin-bottom: 4.5em; }
+    margin-bottom: 4.5em;
+    font-size: 12.5px; }
   .shoppage .inner{
     padding: 0 6em; } }
 
