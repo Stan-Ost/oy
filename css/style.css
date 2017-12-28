@@ -32,9 +32,11 @@ a {
   width: 1.4em;
   height: 1.4em;
   fill: #7b7b7b;
+  stroke: #7b7b7b;
   transition: all .375s; }
   .svg-icon:hover {
     fill: #434343;
+    stroke: #434343;
     transition: all 0s; }
 
 div.tab {
@@ -60,6 +62,7 @@ div.tab button {
   padding-left: 0;
   transition: 0.3s;
   text-align: left;
+  font-size: .8em;
   background-color: transparent;
   border: none;
   color: #7b7b7b;
@@ -487,6 +490,10 @@ th {
 
 .header {
   position: relative; }
+  .header .svg-bag {
+    stroke-width: 2;
+    width: 1.5em;
+    height: 1.5em; }
 
 .header-mobile {
   width: 100%;
@@ -1148,6 +1155,14 @@ th {
       font-weight: 300;
       text-align-last: auto; }
 
+.contactspage .tablinks {
+  font-size: .8em;
+  font-weight: 400;
+  color: #7b7b7b; }
+  .contactspage .tablinks._active {
+    text-decoration: underline;
+    color: #434343; }
+
 .contactspage-wide_inner {
   height: 20em;
   background-image: url("../../img/image-oy-003.jpg");
@@ -1159,6 +1174,7 @@ th {
 .contactspage-title {
   width: 300px;
   height: 40px;
+  font-size: 1.5em;
   text-align: center;
   color: #fff;
   position: absolute;
