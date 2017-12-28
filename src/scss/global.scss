@@ -47,14 +47,15 @@ a {
     width: 1.4em;
     height: 1.4em;
     fill: $text-color;
+    stroke: $text-color;
     transition: all .375s;
 
     &:hover {
         fill: $text-hover-color;
+        stroke: $text-hover-color;
         transition: all 0s;
     }
 }
-
 
 
 
@@ -94,6 +95,7 @@ div.tab button {
     padding-left: 0;
     transition: 0.3s;
     text-align: left;
+    font-size: .8em;
     background-color: transparent;
     border: none;
     color: $text-color;
@@ -122,7 +124,6 @@ div.tab button._active {
 
 /* Style the tab content */
 .tabcontent {
-
     display: none;
     text-align: left !important;
 

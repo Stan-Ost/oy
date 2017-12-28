@@ -1,5 +1,16 @@
 .contactspage {
 
+    .tablinks {
+        font-size: .8em;
+        font-weight: 400;
+        color: $text-color;
+
+        &._active {
+            text-decoration: underline;
+            color: $text-hover-color;
+        }
+    }
+
     &-wide_inner {
         height: 20em;
         background-image: url('../../img/image-oy-003.jpg');
@@ -12,6 +23,7 @@
     &-title {
         width: 300px;
         height: 40px;
+        font-size: 1.5em;
         text-align: center;
         color: #fff;
         position: absolute;

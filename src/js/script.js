@@ -1,10 +1,13 @@
+
+
 $(document).ready(function() {
+     var menuItem = document.querySelector('.navigation-bar_menu-item');
 
     $(".navigation-bar_menu-item").hover(function(event) {
         event.preventDefault();
         $(this).toggleClass("_active");
 
-        var menuItem = document.querySelector('.navigation-bar_menu-item');
+
         if(menuItem.classList.contains('_active')) {
             document.querySelector('.navigation-bar-secondary').style.display = ('flex');
         }
