@@ -1,5 +1,5 @@
 .homepage {
-    margin-top: 3.7em;
+    margin-top: 3.3em;
 
     @media(min-width: $screen-sm) {
         margin-top: 0;
@@ -60,8 +60,10 @@
     &-title {
         text-align: center;
         font-weight: bold;
-        font-size: .7em;
+        font-size: $font_mobile_size;
         margin-bottom: 3em;
+        box-sizing: content-box;
+        padding-top: 1em;
 
         @media(min-width: $screen-sm) {
             font-size: 1em;
@@ -82,13 +84,14 @@
         }
 
         a {
-            font-size: $elementSize;
+
+            font-size: $font_mobile_size;
             color: $text-color;
             font-weight: 400;
             font-size: .9em;
 
             @media(min-width: $screen-sm) {
-                // font-size: 1em;
+                font-size: $elementSize;
             }
 
             &:hover {
@@ -152,7 +155,7 @@
             text-transform: uppercase;
             font-family: $avenir_next_heavy;
             letter-spacing: .3em;
-            margin-top: 7em;
+            margin-top: 8.5em;
 
             @media(min-width: $screen-md) {
                 font-size: 1.2em;
@@ -178,7 +181,7 @@
 
     &-bottom {
         width: 100%;
-        font-size: .6em;
+        font-size: .8em;
         margin-top: 4em;
         margin-bottom: 3em;
 

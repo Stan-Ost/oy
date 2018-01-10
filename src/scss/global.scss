@@ -44,11 +44,16 @@ a {
 }
 
 .svg-icon {
-    width: 1.4em;
-    height: 1.4em;
+    width: 1em;
+    height: 1em;
     fill: $text-color;
     stroke: $text-color;
     transition: all .375s;
+
+    @media(min-width: $screen-sm) {
+        width: 1.4em;
+        height: 1.4em;
+    }
 
     &:hover {
         fill: $text-hover-color;

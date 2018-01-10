@@ -8,17 +8,18 @@
 
     &-navigation {
         width: 70%;
-        padding-top: 0;
+        padding-top: 1em;
         padding-bottom: 2em;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        font-size: $elementSize;
+        font-size: $font_mobile_size;
 
         @media(min-width: $screen-sm) {
             width: 55%;
             padding-top: 2em;
             flex-direction: row;
+            font-size: $elementSize;
         }
 
         &-list {
@@ -38,6 +39,10 @@
             a {
                 color: $text-color;
                 font-size: $elementSize;
+
+                @media(min-width: $screen-sm) {
+                    font-size: $elementSize;
+                }
 
                 &:hover {
                     color: $text-hover-color;
@@ -100,6 +105,7 @@
             b {
                 text-transform: uppercase;
                 color: $text-hover-color;
+                font-weight: 400;
             }
 
             span {
@@ -119,9 +125,10 @@
     }
 
     &-social {
-        width: 100%;
+        width: 70%;
         display: flex;
         justify-content: space-around;
+        margin: 0 auto;
         margin-top: 2em;
 
         @media(min-width: $screen-sm) {
@@ -158,6 +165,7 @@
     transition: all 5s ease;
     font-weight: lighter;
     white-space: nowrap;
+    margin: .7em 0;
 
 
     &._plus {

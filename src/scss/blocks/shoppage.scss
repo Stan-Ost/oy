@@ -25,12 +25,13 @@
         }
 
         &-title {
-            font-size: 1.5em;
+            // font-size: 1em;
             color: $text-hover-color;
 
             @media(min-width: $screen-sm) {
                 margin-top: .5em;
                 margin-bottom: .5em;
+                font-size: 1.5em;
             }
         }
 
@@ -75,6 +76,11 @@
                 &:hover {
                     color: $text-hover-color;
                     transition: $transition_hover;
+                    &:after {
+                        border-color: $text-hover-color;
+                    }
+
+
                 }
 
                 &:after {
@@ -82,8 +88,8 @@
                     display: inline-block;
                     width: .5em;
                     height: .5em;
-                    border-bottom: 1px solid #000;
-                    border-left: 1px solid #000;
+                    border-bottom: 1px solid $text-color;
+                    border-left: 1px solid $text-color;
                     position: absolute;
                     right: 0;
                     top: 50%;
@@ -114,6 +120,8 @@
         }
 
         &-list {
+            display: inline-block;
+            margin: 0 auto;
 
             @media(min-width: $screen-sm) {
                 display: flex;

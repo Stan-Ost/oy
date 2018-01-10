@@ -1,6 +1,6 @@
 .productpage {
     box-sizing: border-box;
-    padding-top: 3.9em;
+    padding-top: 2.4em;
     padding-bottom: 2em;
 
     @media(min-width: $screen-sm) {
@@ -75,7 +75,6 @@
 
     &-colors {
         box-sizing: border-box;
-        padding: 1em 0;
 
         @media(min-width: $screen-sm) {
             padding: 3em 0;
