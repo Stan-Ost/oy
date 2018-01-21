@@ -37,6 +37,7 @@
 
         &-bar {
             display: flex;
+            display: none;
             flex-direction: row;
             justify-content: space-between;
             overflow-x: scroll;
@@ -133,9 +134,9 @@
 
         &-item {
             display: inline-block;
-            width: 45%;
+            width: 46%;
             margin-bottom: 2em;
-            margin-right: 1.5em;
+            margin-right: 5%;
             font-size: .7em;
 
             &:nth-child(2n) {
