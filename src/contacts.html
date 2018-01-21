@@ -103,7 +103,7 @@
         <div class="inner">
             <div class="tab-wrapper">
                 <div class="tab">
-                    <button class="tablinks" onclick="openTab(event, 'Contact')" id="defaultOpen">Contact us</button>
+                    <button id="defaultOpen" class="tablinks" onclick="openTab(event, 'Contact')">Contact us</button>
                     <button class="tablinks" onclick="openTab(event, 'Payment')">Payment</button>
                     <button class="tablinks" onclick="openTab(event, 'Shipping')">Shipping</button>
                     <button class="tablinks" onclick="openTab(event, 'Returns')">Returns</button>
@@ -231,7 +231,11 @@
         </div>
     </footer>
 
-<script  type="text/javascript" src="js/script.min.js"></script>
+<script src="js/script.min.js"></script>
+<script>
+    document.getElementById("defaultOpen").click();
+</script>
+
 </body>
 </html>
 

@@ -1,60 +1,4 @@
 
-
-$(document).ready(function() {
-     var menuItem = document.querySelector('.navigation-bar_menu-item');
-
-    $(".navigation-bar_menu-item").hover(function(event) {
-        event.preventDefault();
-        $(this).toggleClass("_active");
-
-
-        if(menuItem.classList.contains('_active')) {
-            document.querySelector('.navigation-bar-secondary').style.display = ('flex');
-        }
-    });
-
-    $('.homepage').hover(function() {
-       $(".navigation-bar_menu-item ._active").removeClass('_active');
-        if(!menuItem.classList.contains('_active')) {
-            document.querySelector('.navigation-bar-secondary').style.display = ('none');
-        }
-    });
-
-    // Burger
-
-      // script for Burger and Main Menu
-    $('.burger').on('click', function(){
-
-        $('.navigation-mobile').toggleClass('_active');
-    });
-
-    // Slider
-
-    $('.productpage-images').slick({
-        breakpoint: 767,
-        dots: true,
-        arrows: false,
-        speed: 300,
-        slidesToShow: 1,
-        mobileFirst: true,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: 'unslick'
-            }
-        ]
-    });
-
-
-        //
-
-
-
-
-
-});
-
-
 // Accordion
 
 var acc = document.getElementsByClassName("accordion");
@@ -99,7 +43,61 @@ function openTab(evt, cityName) {
     evt.currentTarget.className += " _active";
 }
 
-document.getElementById("defaultOpen").click();
+
+
+
+
+
+
+$(document).ready(function() {
+     var menuItem = document.querySelector('.navigation-bar_menu-item');
+
+    $(".navigation-bar_menu-item").hover(function(event) {
+        event.preventDefault();
+        $(this).toggleClass("_active");
+
+
+        if(menuItem.classList.contains('_active')) {
+            document.querySelector('.navigation-bar-secondary').style.display = ('flex');
+        }
+    });
+
+    $('.homepage').hover(function() {
+       $(".navigation-bar_menu-item ._active").removeClass('_active');
+        if(!menuItem.classList.contains('_active')) {
+            document.querySelector('.navigation-bar-secondary').style.display = ('none');
+        }
+    });
+
+    // Burger
+
+      // script for Burger and Main Menu
+    $('.burger').on('click', function(){
+        $('.navigation-mobile').toggleClass('_active');
+    });
+
+    // Slider
+
+    $('.productpage-images').slick({
+        breakpoint: 767,
+        dots: true,
+        arrows: false,
+        speed: 300,
+        slidesToShow: 1,
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: 'unslick'
+            }
+        ]
+    });
+
+
+        //
+
+
+});
 
 
 
