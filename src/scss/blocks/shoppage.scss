@@ -2,7 +2,8 @@
 
     .inner {
         box-sizing: border-box;
-        padding-top: 2em;
+        padding-top: .5em;
+        padding-bottom: .5em;
 
 
         @media(min-width: $screen-md) {
@@ -14,8 +15,8 @@
     .filter {
         width: 100%;
         background: #f3f3f3;
-        padding-bottom: 1.2em;
-        padding-top: 1em;
+        // padding-bottom: 1.2em;
+        padding-top: 3.5em;
         margin-top: 1em;
         color: #000;
 
@@ -25,8 +26,11 @@
         }
 
         &-title {
-            // font-size: 1em;
+            margin-top: 0;
+            padding-bottom: 1em;
+            margin-bottom: 0;
             color: $text-hover-color;
+            font-size: 1em;
 
             @media(min-width: $screen-sm) {
                 margin-top: .5em;
@@ -107,6 +111,8 @@
         width: 100%;
         height: 1px;
         background-color: #bcbcbc;
+        box-sizing: border-box;
+        padding: 0 2em;
     }
 
     .catalog {
