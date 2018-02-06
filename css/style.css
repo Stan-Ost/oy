@@ -843,7 +843,7 @@ th {
       .footer-settings_button b {
         text-transform: uppercase;
         color: #434343;
-        font-weight: 400; }
+        font-weight: 300; }
       .footer-settings_button span {
         color: #7b7b7b; }
       .footer-settings_button:hover {
@@ -907,17 +907,21 @@ th {
 
 .shoppage .inner {
   box-sizing: border-box;
-  padding-top: 2em; }
+  padding-top: .5em;
+  padding-bottom: .5em; }
 
 .shoppage .filter {
   width: 100%;
   background: #f3f3f3;
   padding-bottom: 1.2em;
-  padding-top: 1em;
+  padding-top: 3.5em;
   margin-top: 1em;
   color: #000; }
   .shoppage .filter-title {
-    color: #434343; }
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #434343;
+    font-size: 1em; }
   .shoppage .filter-bar {
     display: -ms-flexbox;
     display: flex;
@@ -963,7 +967,9 @@ th {
   display: inline-block;
   width: 100%;
   height: 1px;
-  background-color: #bcbcbc; }
+  background-color: #bcbcbc;
+  box-sizing: border-box;
+  padding: 0 2em; }
 
 .shoppage .catalog .inner {
   padding-top: 1em; }
@@ -987,10 +993,14 @@ th {
       .shoppage .catalog-item-title a:hover {
         color: #7b7b7b; }
   .shoppage .catalog-item-price {
-    margin-top: .5em; }
+    margin-top: .5em;
+    font-size: 1.2em; }
+
+.shoppage .collection-title {
+  margin: 0; }
 
 .shoppage .collection-list {
-  margin-top: 2em; }
+  margin-top: 1em; }
 
 .shoppage .collection-item {
   display: inline-block;
@@ -1049,7 +1059,8 @@ th {
     font-weight: normal;
     color: #434343;
     text-transform: uppercase;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    margin-top: 0; }
   .productpage-price {
     color: #434343; }
   .productpage-colors {
@@ -1388,7 +1399,7 @@ th {
         position: absolute;
         top: 0;
         left: 0;
-        content: "•";
+        content: "♥";
         width: 20px;
         height: 20px;
         font-family: "slick";
@@ -1535,7 +1546,8 @@ th {
     justify-content: space-between;
     -ms-flex-align: baseline;
     align-items: baseline;
-    margin-bottom: 2em; }
+    margin-bottom: 2em;
+    margin-top: 2em; }
   .shoppage .collection-item{
     width: 25%; }
   .blogpage h2{
