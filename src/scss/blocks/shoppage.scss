@@ -15,7 +15,7 @@
     .filter {
         width: 100%;
         background: #f3f3f3;
-        // padding-bottom: 1.2em;
+        padding-bottom: 1.2em;
         padding-top: 3.5em;
         margin-top: 1em;
         color: #000;
@@ -27,7 +27,7 @@
 
         &-title {
             margin-top: 0;
-            padding-bottom: 1em;
+            // padding-bottom: 1em;
             margin-bottom: 0;
             color: $text-hover-color;
             font-size: 1em;
@@ -185,6 +185,7 @@
 
             &-price {
                 margin-top: .5em;
+                font-size: 1.2em;
             }
 
 
@@ -197,9 +198,13 @@
             padding-bottom: 4em;
         }
 
+        &-title {
+            margin: 0;
+        }
+
         &-list {
 
-            margin-top: 2em;
+            margin-top: 1em;
 
             @media(min-width: $screen-sm) {
                 display: flex;
@@ -207,6 +212,7 @@
                 justify-content: space-between;
                 align-items: baseline;
                 margin-bottom: 2em;
+                margin-top: 2em;
             }
         }
 
