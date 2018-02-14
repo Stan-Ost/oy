@@ -39,6 +39,7 @@
             a {
                 color: $text-color;
                 font-size: $elementSize;
+                font-weight: 100;
 
                 @media(min-width: $screen-sm) {
                     font-size: $elementSize;
@@ -76,6 +77,10 @@
             padding-right: 1em;
             background: transparent;
             position: relative;
+            color: $text-color;
+            font-size: 12.5px;
+            font-weight: 100;
+            letter-spacing: .1em;
 
             margin-bottom: .8em;
             text-align: left;
@@ -85,39 +90,13 @@
             }
 
 
-            &:hover:after {
-                border-color: $text-hover-color;
-            }
-
-            &:after {
-                // content: '';
-                // display: inline-block;
-                // width: .6em;
-                // height: .6em;
-                // border-bottom: 1px solid #000;
-                // border-right: 1px solid #000;
-                // transform: rotate(45deg);
-                // position: absolute;
-                // right: -1em;
-                // top: 0;
-            }
-
-            b {
-                text-transform: uppercase;
-                color: $text-hover-color;
-                font-weight: 300;
-            }
-
-            span {
-                color: $text-color;
+            &-title {
+                font-size: 1.1em;
+                font-weight: 400;
             }
 
             &:hover {
                 color: $text-hover-color;
-
-                span {
-                    color: $text-hover-color;
-                }
             }
         }
 
@@ -163,7 +142,7 @@
     cursor: pointer;
     position: relative;
     transition: all 5s ease;
-    font-weight: lighter;
+    font-weight: 400;
     white-space: nowrap;
     margin: .7em 0;
 
